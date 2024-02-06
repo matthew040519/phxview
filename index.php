@@ -10,7 +10,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Salient - Free Responsive HTML5 Template | Template Stock</title>
+  <title>PHXVIEW</title>
 
   <!-- Custom Google fonts -->
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,300,700' rel='stylesheet' type='text/css'>
@@ -83,6 +83,7 @@
             <li><a href="#prices-section">Prices</a></li>
             <li><a href="#subscribe-section">Subscribe</a></li>
             <li><a href="#contact-section">Contact</a></li>
+            <li><a href="login.php">Login</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->
@@ -275,7 +276,7 @@
 
             <div class="col-md-6">
               <div class="features-image animated out" data-animation="fadeInUp" data-delay="0">
-                <img src="assets/images/temp/woman.jpg" alt="">
+                <img src="front_page/assets/images/temp/woman.jpg" alt="">
               </div> <!-- end features-image -->
             </div> <!-- end col-md-6 -->
 
