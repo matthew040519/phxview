@@ -131,6 +131,35 @@
             </a>
           </li>
           <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                Task
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pendingtask.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Pending Task</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="expiretask.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Expire Task</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="donetask.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Done Task</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
             <a href="withdraw.php" class="nav-link">
               <i class="nav-icon fas fa-credit-card"></i>
               <p>
