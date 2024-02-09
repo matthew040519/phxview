@@ -24,9 +24,9 @@
     <div class="card-body">
       <p class="login-box-msg">Sign in to start your session</p>
 
-      <form action="back/index3.html" method="post">
+      <form method="post">
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email">
+          <input type="text" class="form-control" name="username" placeholder="Username">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -34,7 +34,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Password">
+          <input type="password" class="form-control" name="password" placeholder="Password">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -52,11 +52,61 @@
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            <button type="submit" name="sign_in" class="btn btn-primary btn-block">Sign In</button>
           </div>
           <!-- /.col -->
         </div>
       </form>
+
+      <?php
+
+        if(isset($_POST['sign_in']))
+        {
+            include('include/connection.php');
+
+            $username = $_POST['username'];
+            $password = md5($_POST['password']);
+
+            session_start();
+
+            $user = mysqli_query($connection, "SELECT * FROM users INNER JOIN user_details ON users.users_id=user_details.users_id WHERE username = '$username'");
+            $rowuser = mysqli_fetch_array($user);
+
+            $checkusername = mysqli_num_rows($user);
+
+            if($checkusername > 0)
+            {
+              if ($password == $rowuser['password']) {
+
+                session_regenerate_id();
+
+                $_SESSION['loggedin'] = TRUE;
+                $_SESSION['role'] = $rowuser['role'];
+                $_SESSION['username'] = $rowuser['username'];
+                $_SESSION['fullname'] = $rowuser['first_name']. " " . $rowuser['last_name'];
+                $_SESSION['id'] = $rowuser['users_id'];
+
+                if($rowuser['role'] == 1)
+                {
+                    header('location: admin/index.php');
+                }
+                else {
+                    header('location: members/index.php');
+                }
+                
+
+              } else {
+                echo "<script>alert('Invalid Password.')</script>";
+              }
+            } else {
+                echo "<script>alert('Invalid Username or Password.')</script>";
+            }
+            
+
+
+        }
+      
+      ?>
 
       <!-- <div class="social-auth-links text-center mt-2 mb-3">
         <a href="#" class="btn btn-block btn-primary">
