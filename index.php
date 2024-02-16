@@ -10,7 +10,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PHXVIEW</title>
+  <title>PHXClick</title>
 
   <!-- Custom Google fonts -->
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,300,700' rel='stylesheet' type='text/css'>
@@ -117,7 +117,7 @@ h4{text-align:center;margin:30px 0;color:#444}
 
 /******************* Timeline Demo - 4 *****************/
 .main-timeline4{overflow:hidden;position:relative}
-.main-timeline4:before{content:"";width:5px;height:70%;background:#333;position:absolute;top:70px;left:50%;transform:translateX(-50%)}
+.main-timeline4:before{content:"";width:5px;height:80%;background:#333;position:absolute;top:70px;left:50%;transform:translateX(-50%)}
 .main-timeline4 .timeline-content:before,.main-timeline4 .timeline:before{top:50%;transform:translateY(-50%);content:""}
 .main-timeline4 .timeline{width:50%;padding-left:100px;float:right;position:relative}
 .main-timeline4 .timeline:before{width:20px;height:20px;border-radius:50%;background:#fff;border:5px solid #333;position:absolute;left:-10px}
@@ -195,7 +195,7 @@ h4{text-align:center;margin:30px 0;color:#444}
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-           <a class="navbar-brand" href="#" style="margin-top: 6%;">PHX <span>VIEW</span></a>
+           <a class="navbar-brand" href="#" style="margin-top: 6%;">PHX <span>Click</span></a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navigation-nav">
@@ -205,9 +205,9 @@ h4{text-align:center;margin:30px 0;color:#444}
             <li><a href="#milestone-section">Milestone</a></li>
             <li><a href="#features-section">Services</a></li>
             <li><a href="#team-section">Team</a></li>
-            <li><a href="#screenshots-section">Works</a></li>
-            <li><a href="#prices-section">Prices</a></li>
-            <li><a href="#subscribe-section">Subscribe</a></li>
+            <!--  <li><a href="#screenshots-section">Works</a></li> -->
+            <!-- <li><a href="#prices-section">Prices</a></li> -->
+            <!--<li><a href="#subscribe-section">Subscribe</a></li> -->
             <li><a href="#contact-section">Contact</a></li>
             <li><a href="login.php">Login</a></li>
           </ul>
@@ -233,21 +233,21 @@ h4{text-align:center;margin:30px 0;color:#444}
                     <ul class="caption-slides">
 
                       <li class="caption">
-                        <h1>A Legacy of Quality</h1>
+                        <h1>Advertising</h1>
                         <div class="div-line"></div>
-                        <p class="hero">Branding, Photography &amp; Web Development</p>
+                        <p class="hero">Products , Business &amp; Services</p>
                       </li>
 
                       <li class="caption">
-                        <h1>RESPONSIVE TEMPLATES</h1>
+                        <h1>Crypto Token Integration</h1>
                         <div class="div-line"></div>
-                        <p class="hero">Design &amp; Development</p>
+                        <p class="hero">AZNT TOKEN &amp; other more token</p>
                       </li>
 
                       <li class="caption">
-                        <h1>HIGH QUALITY CODE</h1>
+                        <h1>AZ PHX Hub</h1>
                         <div class="div-line"></div>
-                        <p class="hero">HTML5 &amp; CSS3</p>
+                        <p class="hero">Announcement, airdrops plus gadgets &amp; other more.</p>
                       </li>
 
                     </ul>
@@ -276,9 +276,16 @@ h4{text-align:center;margin:30px 0;color:#444}
             <div class="row">
               <div class="col-sm-8 col-sm-offset-2">
                 <h2 class="big-title">Some information about us</h2>
-                <h1 class="big-subtitle">We’re small branding &amp; digital studio</h1>
+                <h1 class="big-subtitle">Introduction</h1>
                 <hr>
-                <p class="about-text">Cras porta dolor ut velit imperdiet, quis sodales tellus facilisis. Vestibulum magna turpis, tincidun blandit semper lorem. Mauris nodesterin feugiat neque, a aliquet ligula. Sed non felis tincidunt, facilisis felis vitae, mollis est. Nulla sapien dui, feugiat sed velit a, egestas porta magna.</p>
+                <p class="about-text">PHX Click Online is a pioneering online platform dedicated to providing comprehensive services in the rapidly evolving world of cryptocurrency and blockchain technology. With a commitment to innovation, security, and user experience, we aim to be the premier destination for individuals and businesses seeking to navigate and thrive in the digital asset landscape.</p>
+                <h1 class="big-subtitle">Mission</h1>
+                <hr>
+                <p class="about-text">Our mission at PHX Click Online is to empower individuals and businesses by providing them with the tools, resources, and knowledge needed to harness the full potential of cryptocurrency and blockchain technology. We strive to facilitate seamless access to digital assets, foster education and awareness, and promote responsible and sustainable investment practices.</p>  
+                <h1 class="big-subtitle">Vision</h1>
+                <hr>
+                <p class="about-text">At PHX Click Online, we envision a future where cryptocurrency and blockchain technology are seamlessly integrated into our daily lives, empowering individuals and businesses with greater financial freedom, security, and innovation. By pioneering new solutions, fostering education and awareness, and advocating for widespread adoption, we strive to be at the forefront of this transformative movement</p>
+                <p class="about-text">Join us on our journey to revolutionize the future of finance with cryptocurrency and blockchain technology. Welcome to CryptoHub Online, where the future of finance is now.</p>
               </div>
             </div> <!-- End row -->
           </div> <!-- end title-section -->
@@ -291,8 +298,8 @@ h4{text-align:center;margin:30px 0;color:#444}
                 <div class="offer-icon">
                   <span class="icon-desktop"></span>
                 </div>
-                <h4>DESIGNS &amp; INTERFACES</h4>
-                <p>Mauris eros tortor, tristique cursus porttitor et, luctus sed urna. Quisque id libero risus. Aliquam accumsan erat id sem placerat tempus.</p>
+                <h4>Advertisement &amp; Traffic</h4>
+                <p>We provide integration solutions for e-commerce platforms, POS systems, and custom applications, allowing businesses to tap into the growing crypto economy.</p>
               </div> <!-- End offer-post -->
             </div> <!-- End col-sm-4 -->
 
@@ -301,8 +308,9 @@ h4{text-align:center;margin:30px 0;color:#444}
                 <div class="offer-icon">
                   <span class="icon-piechart"></span>
                 </div>
-                <h4>Branding</h4>
-                <p>Mauris eros tortor, tristique cursus porttitor et, luctus sed urna. Quisque id libero risus. Aliquam accumsan erat id sem placerat tempus.</p>
+                <h4>Crypto Token</h4>
+                <p>As a leading platform in the crypto space, CryptoHub Online offers ICO consultation services and assists blockchain projects with token listing.</p>
+                <p>We provide guidance on token economics, regulatory compliance, and marketing strategies to help projects launch and succeed in the market.</p>
               </div> <!-- End offer-post -->
             </div> <!-- End col-sm-4 -->
 
@@ -311,8 +319,9 @@ h4{text-align:center;margin:30px 0;color:#444}
                 <div class="offer-icon">
                   <span class="icon-lifesaver"></span>
                 </div>
-                <h4>Dedicated support</h4>
-                <p>Mauris eros tortor, tristique cursus porttitor et, luctus sed urna. Quisque id libero risus. Aliquam accumsan erat id sem placerat tempus.</p>
+                <h4>Community Hub</h4>
+                <p>We prioritize building a vibrant and supportive community of cryptocurrency enthusiasts, traders, developers, and investors.</p>
+                <p>Our dedicated customer support team is available 24/7 to assist users with any inquiries, issues, or feedback.</p>
               </div> <!-- End offer-post -->
             </div> <!-- End col-sm-4 -->
 
@@ -337,7 +346,7 @@ h4{text-align:center;margin:30px 0;color:#444}
               <div class="col-sm-8 col-sm-offset-2">
                 <h2>Milestone</h2>
                 <hr>
-                <p>Seamlessly restore client-focused potentialities rather than functional strategic theme areas.</p>
+                <p>By following this roadmap, PHX Click Online aims to become a leading player in the cryptocurrency industry by providing innovative solutions and value to users globally.</p>
               </div> <!-- edn col-sm-8 -->
             </div> <!-- End row -->
           </div>
@@ -348,9 +357,9 @@ h4{text-align:center;margin:30px 0;color:#444}
                             <a href="#" class="timeline-content">
                                 <span class="year">2018</span>
                                 <div class="inner-content">
-                                    <h3 class="title">Web Designer</h3>
+                                    <h3 class="title">Phase 1: Foundation</h3>
                                     <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex odio, rhoncus sit amet tincidunt eu, suscipit a orci. In suscipit quam eget dui auctor.
+                                    Establish the platform's foundation by setting up infrastructure, developing the user interface, conducting testing, and recruiting key team members.
                                     </p>
                                 </div>
                             </a>
@@ -359,9 +368,9 @@ h4{text-align:center;margin:30px 0;color:#444}
                             <a href="#" class="timeline-content">
                                 <span class="year">2017</span>
                                 <div class="inner-content">
-                                    <h3 class="title">Web Developer</h3>
+                                    <h3 class="title">Phase 2: Launch And Initial Operation</h3>
                                     <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex odio, rhoncus sit amet tincidunt eu, suscipit a orci. In suscipit quam eget dui auctor.
+                                      Launch the platform with limited features, focusing on social media marketing, influencer partnerships, and advertising. Monitor performance and gather user feedback.
                                     </p>
                                 </div>
                             </a>
@@ -370,9 +379,9 @@ h4{text-align:center;margin:30px 0;color:#444}
                             <a href="#" class="timeline-content">
                                 <span class="year">2016</span>
                                 <div class="inner-content">
-                                    <h3 class="title">Web Designer</h3>
+                                    <h3 class="title">Phase 3: Expansion and Diversification</h3>
                                     <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex odio, rhoncus sit amet tincidunt eu, suscipit a orci. In suscipit quam eget dui auctor.
+                                    Expand services offered, improve user experience, form strategic partnerships, and explore international expansion opportunities.
                                     </p>
                                 </div>
                             </a>
@@ -381,9 +390,20 @@ h4{text-align:center;margin:30px 0;color:#444}
                             <a href="#" class="timeline-content">
                                 <span class="year">2015</span>
                                 <div class="inner-content">
-                                    <h3 class="title">Web Developer</h3>
+                                    <h3 class="title">Phase 4: Innovation And differentiation</h3>
                                     <p class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex odio, rhoncus sit amet tincidunt eu, suscipit a orci. In suscipit quam eget dui auctor.
+                                    Invest in research and development, launch innovative products, refine existing features, and foster an innovative culture within the organization.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="timeline">
+                            <a href="#" class="timeline-content">
+                                <span class="year">2014</span>
+                                <div class="inner-content">
+                                    <h3 class="title">Phase 5: Innovation And differentiation</h3>
+                                    <p class="description">
+                                    Scale up operations to accommodate growth, invest in scalability improvements, expand geographically, explore strategic acquisitions/partnerships, and maintain focus on security, compliance, and user trust.
                                     </p>
                                 </div>
                             </a>
@@ -579,9 +599,9 @@ h4{text-align:center;margin:30px 0;color:#444}
                   <img src="front_page/assets/images/team/m1.jpg" alt="">
                   <div class="magnifier">
                     <div class="magnifier-inner">
-                      <h3>MICHAEL ROOF</h3>
-                      <p>Co_founder &amp; Designer</p>
-                      <p>We’ll etch your brand onto tangible objects: business cards, ads, stickers, brochures, you name it. You won’t see business cards, ads, stickers, brochures anything until we’re done drooling at the result.</p>
+                      <h3>John smith</h3>
+                      <p>Chief executive officer</p>
+                      <p>over 15 years of experience in technology startups and financial services. He is responsible for setting the strategic direction of the company and overseeing its overall operations.</p>
                       <ul class="social-icons">
 
                         <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" data-title="Facebook" href="#" data-original-title="" title=""><i class="fa fa-facebook"></i></a></li>
@@ -604,9 +624,9 @@ h4{text-align:center;margin:30px 0;color:#444}
                   <img src="front_page/assets/images/team/m2.jpg" alt="">
                   <div class="magnifier">
                     <div class="magnifier-inner">
-                      <h3>CHARLES WHITE</h3>
-                      <p>Co_founder &amp; Designer</p>
-                      <p>We’ll etch your brand onto tangible objects: business cards, ads, stickers, brochures, you name it. You won’t see business cards, ads, stickers, brochures anything until we’re done drooling at the result.</p>
+                      <h3>Emily johnson</h3>
+                      <p>Chief operating officer</p>
+                      <p>background in operations management and has previously worked with leading fintech companies. She oversees day-to-day operations, ensuring that the platform runs smoothly and efficiently.</p>
                       <ul class="social-icons">
 
                         <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" data-title="Facebook" href="#" data-original-title="" title=""><i class="fa fa-facebook"></i></a></li>
@@ -629,9 +649,9 @@ h4{text-align:center;margin:30px 0;color:#444}
                   <img src="front_page/assets/images/team/m3.jpg" alt="">
                   <div class="magnifier">
                     <div class="magnifier-inner">
-                      <h3>MARTIN CAMBRIGE</h3>
-                      <p>Head Support</p>
-                      <p>We’ll etch your brand onto tangible objects: business cards, ads, stickers, brochures, you name it. You won’t see business cards, ads, stickers, brochures anything until we’re done drooling at the result.</p>
+                      <h3>David lee</h3>
+                      <p>Chief technology officer</p>
+                      <p> a seasoned technologist with expertise in blockchain, cybersecurity, and software development. He leads the technical team in building and maintaining the platform's infrastructure and security protocols.</p>
                       <ul class="social-icons">
 
                         <li><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" data-title="Facebook" href="#" data-original-title="" title=""><i class="fa fa-facebook"></i></a></li>
@@ -662,7 +682,7 @@ h4{text-align:center;margin:30px 0;color:#444}
         <div class="container">
             <div class="row">
 
-              <div class="col-md-6 col-sm-6 col-xs-12">
+              <!--<div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="title-section">
                   <h3>Our team skills</h3>
                 </div>
@@ -675,7 +695,7 @@ h4{text-align:center;margin:30px 0;color:#444}
                   <!-- skillbar -->
                   <div class="p-bar">
                     <!-- meta -->
-                    <div class="progress-meta">
+                    <!-- <div class="progress-meta">
                       <h6 class="progress-title">photoshop</h6>
                       <h6 class="progress-value">75%</h6>
                     </div>
@@ -689,7 +709,7 @@ h4{text-align:center;margin:30px 0;color:#444}
                   <!-- skillbar -->
                   <div class="p-bar">
                     <!-- meta -->
-                    <div class="progress-meta">
+                    <!-- <div class="progress-meta">
                       <h6 class="progress-title">html</h6>
                       <h6 class="progress-value">95%</h6>
                     </div>
@@ -703,7 +723,7 @@ h4{text-align:center;margin:30px 0;color:#444}
                   <!-- skillbar -->
                   <div class="p-bar">
                     <!-- meta -->
-                    <div class="progress-meta">
+                    <!-- <div class="progress-meta">
                       <h6 class="progress-title">css</h6>
                       <h6 class="progress-value">85%</h6>
                     </div>
@@ -717,7 +737,7 @@ h4{text-align:center;margin:30px 0;color:#444}
                   <!-- skillbar -->
                   <div class="p-bar">
                     <!-- meta -->
-                    <div class="progress-meta">
+                    <!-- <div class="progress-meta">
                       <h6 class="progress-title">jquery</h6>
                       <h6 class="progress-value">73%</h6>
                     </div>
@@ -859,10 +879,10 @@ h4{text-align:center;margin:30px 0;color:#444}
 
             <div class="col-sm-5 creative-content-right animated out" data-animation="fadeInRight" data-delay="0">
               <div class="section_header">
-                <h2>Creative project</h2> 
+                <h2>E-commerce</h2> 
               </div> <!-- End section_header -->
 
-                <p> Lorem ipsum <span>dolor</span> sit amet, consectetur adipisicing elit.Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p> CryptoHub Online offers merchant services that enable businesses to accept cryptocurrency payments securely and seamlessly.</p>
 
               <div class="view-more">
                 <a href="#services-section" class="btn btn-lg btn-primary">View online</a>
@@ -1018,12 +1038,12 @@ h4{text-align:center;margin:30px 0;color:#444}
           <div class="title-section text-center animated out" data-animation="fadeInUp" data-delay="0">
             <div class="row">
               <div class="col-sm-8 col-sm-offset-2">
-                <h2>Our Prices</h2>
+               <!-- <h2>Our Prices</h2>
                 <hr>
                 <p>Seamlessly restore client-focused potentialities rather than functional strategic theme areas.</p>
               </div>
             </div> <!-- End row -->
-          </div> <!-- end title-section -->
+          </div> <!-- end title-section 
 
           <div class="row">
             <div class="col-sm-4">
@@ -1055,7 +1075,7 @@ h4{text-align:center;margin:30px 0;color:#444}
               </ul>
             </div> <!-- end col-sm-4 -->
 
-            <div class="col-sm-4">
+            <!-- <div class="col-sm-4">
               <ul class="price-table animated out" data-animation="fadeInUp" data-delay="0">
                   <li class="title-price">
                     <h3>Basic Pack</h3>
@@ -1084,7 +1104,7 @@ h4{text-align:center;margin:30px 0;color:#444}
               </ul>
             </div> <!-- end col-sm-4 -->
 
-            <div class="col-sm-4">
+            <!-- <div class="col-sm-4">
               <ul class="price-table animated out" data-animation="fadeInRight" data-delay="0">
                   <li class="title-price">
                     <h3>Basic Pack</h3>
@@ -1223,7 +1243,7 @@ h4{text-align:center;margin:30px 0;color:#444}
                 <div class="col-sm-8 col-sm-offset-2">
                   <h2>Get in touch</h2>
                   <hr>
-                  <p>Sed ac mattis justo. Vestibulum facilisis at arcu ac porta. Vivamus at ipsum at quam hendrerit gravida.</p>
+                  <p>Certainly! If you have any inquiries, feedback, or would like to get in touch with PHX Click Online, please feel free to reach out to us through the following channels.</p>
               </div>
             </div> <!-- End row -->
           </div> <!-- end title-section -->
@@ -1277,7 +1297,7 @@ h4{text-align:center;margin:30px 0;color:#444}
               <a href="#"><i class="pe-7s-map-marker"></i>123 Road. New York.</a>
             </div> <!-- End col-sm-4 -->
             <div class="col-sm-4">
-            <a href="tel:+123000456"><i class="pe-7s-phone"></i>+123 000 456</a>
+            <a href="tel:+123000456"><i class="pe-7s-phone"></i>+1 (555) 123-4567</a>
             </div>
              <div class="col-sm-4">
               <a href="mailto:hello@hotmail.com"><i class="pe-7s-mail"></i>hello@hotmail.com</a>
@@ -1302,7 +1322,7 @@ h4{text-align:center;margin:30px 0;color:#444}
                 <li><a href="#">Pinterest</a></li>
               </ul>
               <p class="copyright">
-                &copy; 2016 Salient - Created By <a href="http://templatestock.co">Template Stock</a>
+               <!-- &copy; 2016 Salient - Created By <a href="http://templatestock.co">Template Stock</a> -->
               </p>
             </div> <!-- End col-sm-8 -->
           </div> <!-- End row -->

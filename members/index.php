@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PHXVIEW</title>
+  <title>PHXclick</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -45,7 +45,6 @@
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
@@ -66,6 +65,11 @@
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+          <iframe width="100%" height="360" src="https://www.youtube.com/embed/ClS213B-lVM" title="WARRIORS at JAZZ | FULL GAME HIGHLIGHTS | February 15, 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
         <!-- Small boxes (Stat box) -->
         <div class="row">
           <div class="col-lg-3 col-6">
@@ -74,27 +78,27 @@
               <div class="inner">
                 <h3>0.00</h3>
 
-                <p>Total Commission</p>
+                <p>PhxCoin</p>
               </div>
               <div class="icon">
                 <i class="fas fa-coins"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="#" class="small-box-footer">Convert <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-success">
+            <div class="small-box bg-secondary">
               <div class="inner">
                 <h3>0.00</h3>
 
-                <p>Total Balance</p>
+                <p>AZNT</p>
               </div>
               <div class="icon">
-                <i class="fas fa-coins"></i>
+                <i><img width="80px" style="margin-bottom: 100%;" height="100%" src="../logo/aznt.ico" alt=""></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="#" class="small-box-footer">  <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -104,12 +108,12 @@
               <div class="inner">
                 <h3>0.00</h3>
 
-                <p>Total Withdrawal</p>
+                <p>Withdrawal</p>
               </div>
               <div class="icon">
                 <i class="fas fa-wallet"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="#" class="small-box-footer">  <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -119,12 +123,12 @@
               <div class="inner">
                 <h3>0</h3>
 
-                <p>Total Downlines</p>
+                <p>Days Remaining</p>
               </div>
               <div class="icon">
-                <i class="fas fa-users"></i>
+                <i class="fas fa-calendar"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="#" class="small-box-footer">  <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -134,14 +138,14 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>0.00</h3>
+                <h3>_</h3>
 
-                <p>Total Direct Referral</p>
+                <p>Raffle</p>
               </div>
               <div class="icon">
-                <i class="fas fa-users"></i>
+                <i class="ion ion-aperture"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="#" class="small-box-footer"> <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -151,12 +155,12 @@
               <div class="inner">
                 <h3>0</h3>
 
-                <p>Total Task Done</p>
+                <p>Unilevel</p>
               </div>
               <div class="icon">
-                <i class="fas fa-handshake"></i>
+                <i class="fas fa-network-wired"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="#" class="small-box-footer">  <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -166,12 +170,12 @@
               <div class="inner">
                 <h3>0</h3>
 
-                <p>Total Pending Task</p>
+                <p>Downlines</p>
               </div>
               <div class="icon">
-                <i class="fas fa-thumbtack"></i>
+                <i class="fas fa-users"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="#" class="small-box-footer"> <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -181,15 +185,15 @@
               <div class="inner">
                 <h3>0</h3>
 
-                <p>Expired Task</p>
+                <p>E-market</p>
               </div>
               <div class="icon">
-                <i class="fas fa-ban"></i>
+                <i class="fas fa-shopping-cart"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="#" class="small-box-footer"> <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
-          <!-- ./col -->
+          
         </div>
       </div><!-- /.container-fluid -->
     </section>
