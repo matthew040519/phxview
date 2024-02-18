@@ -147,10 +147,10 @@
               <div class="inner">
                 <h3>_</h3>
 
-                <p>Raffle</p>
+                <p>Rewards Wallet</p>
               </div>
               <div class="icon">
-                <i class="ion ion-aperture"></i>
+                <i class="fas fa-wallet"></i>
               </div>
               <a href="#" class="small-box-footer"> <i class="fas fa-arrow-circle-right"></i></a>
             </div>
