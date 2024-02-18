@@ -224,6 +224,15 @@
             </a>
           </li>
             <?php } ?>
+            <li class="nav-item">
+            <a href="logout.php" class="nav-link">
+              <i class="nav-icon ion ion-power"></i>
+              <p>
+                Logout
+                <!-- <span class="right badge badge-danger">New</span> -->
+              </p>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
