@@ -254,6 +254,7 @@
                 <input type="hidden" name="rate" value="<?php echo $row_task['rate']; ?>">
                 <div class="card-header" style="text-align: center;">
                   <h3><?php echo $row_task['task_name']; ?></h3>
+                  Rewards: <?php echo number_format($row_task['rate'], 2); ?>
                 </div>
                 <div class="card-body">
                 <!-- style="pointer-events: none;" -->
