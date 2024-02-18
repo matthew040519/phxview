@@ -85,13 +85,18 @@
                 $_SESSION['username'] = $rowuser['username'];
                 $_SESSION['fullname'] = $rowuser['first_name']. " " . $rowuser['last_name'];
                 $_SESSION['id'] = $rowuser['users_id'];
+                $_SESSION['date_join'] = $rowuser['date_join'];
 
                 if($rowuser['role'] == 1)
                 {
                     header('location: admin/index.php');
                 }
-                else {
+                else if($rowuser['role'] == 0) {
                     header('location: members/index.php');
+                }
+                else
+                {
+                    header('location: client/index.php');
                 }
                 
 
@@ -122,7 +127,7 @@
         <a href="forgot-password.html">I forgot my password</a>
       </p> -->
       <p class="mb-0">
-        <a href="register.html" class="text-center">Register a new membership</a>
+        <a href="register.php" class="text-center">Register a new membership</a>
       </p>
     </div>
     <!-- /.card-body -->

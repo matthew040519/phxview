@@ -120,7 +120,7 @@
               </p>
             </a>
           </li>
-          <?php } else { ?>
+          <?php } else if($_SESSION['role'] == 0) { ?>
           <li class="nav-item">
             <a href="announcement.php" class="nav-link">
               <i class="nav-icon fas fa-bullhorn"></i>
@@ -195,7 +195,27 @@
               </p>
             </a>
           </li>
-          <?php } ?>
+          <?php } else { ?>
+            
+          <li class="nav-item">
+            <a href="statistics.php" class="nav-link">
+              <i class="nav-icon fas fa-chart-area"></i>
+              <p>
+                Statistics
+                <!-- <span class="right badge badge-danger">New</span> -->
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="reports.php" class="nav-link">
+              <i class="nav-icon fas fa-file-contract"></i>
+              <p>
+                Reports
+                <!-- <span class="right badge badge-danger">New</span> -->
+              </p>
+            </a>
+          </li>
+            <?php } ?>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

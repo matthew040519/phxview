@@ -21,9 +21,9 @@
 <div class="wrapper">
 
   <!-- Preloader -->
-  <div class="preloader flex-column justify-content-center align-items-center">
+  <!-- <div class="preloader flex-column justify-content-center align-items-center">
     <img class="animation__shake" src="../logo/logo.png" alt="AdminLTELogo" height="150" width="150">
-  </div>
+  </div> -->
 
   <!-- Navbar -->
     <?php include('../include/navbar.php'); ?>
@@ -76,16 +76,19 @@
                   </tr>
                   </thead>
                   <tbody>
-                    <!-- <tr>
-                        <td>Trident</td>
-                        <td>Internet
-                        Explorer 4.0
-                        </td>
-                        <td>Win 95+</td>
-                        <td> 4</td>
-                        <td>X</td>
-                        <td>X</td>
-                    </tr> -->
+                    <?php 
+                      $query = mysqli_query($connection, "SELECT username, address, users.users_id as id, date_join, date_expired FROM users INNER JOIN user_details ON users.users_id=user_details.users_id WHERE users.role = 2");
+                      while($row = mysqli_fetch_array($query)){
+                    ?>
+                    <tr>
+                        <td><?php echo $row['id']; ?></td>
+                        <td><?php echo $row['username']; ?></td>
+                        <td><?php echo $row['address']; ?></td>
+                        <td><?php echo $row['date_join']; ?></td>
+                        <td><?php echo $row['date_expired']; ?></td>
+                        <td>Active</td>
+                    </tr>
+                    <?php } ?>
                   </tbody>
                 </table>
               </div>
@@ -110,31 +113,40 @@
               </button>
             </div>
             <div class="modal-body">
-              <form action="">
+              <form method="POST">
                 <div class="row">
                     <div class="col-md-12">
                         <label for="">Client Name</label>
-                        <input type="text" class="form-control">
+                        <input type="text" name="client_name" class="form-control">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="">First Name</label>
+                        <input type="text" name="first_name" class="form-control">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="">Last Name</label>
+                        <input type="text" name="last_name" class="form-control">
                     </div>
                     <div class="col-md-12">
                         <label for="">Date Join</label>
-                        <input type="date" class="form-control">
+                        <input type="date" name="date_join" class="form-control">
                     </div>
                     <div class="col-md-12">
                         <label for="">Date Expire</label>
-                        <input type="date" class="form-control">
+                        <input type="date" name="date_expire" class="form-control">
                     </div>
                     <div class="col-md-12">
                         <label for="">Address</label>
-                        <textarea name="" id="" cols="30" rows="4" class="form-control"></textarea>
+                        <textarea id="" cols="30" name="address" rows="4" class="form-control"></textarea>
                     </div>
                 </div>
-              </form>
+              
             </div>
             <div class="modal-footer justify-content-between">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="submit" name="save" class="btn btn-primary">Save changes</button>
             </div>
+            </form>
           </div>
           <!-- /.modal-content -->
         </div>
@@ -152,6 +164,30 @@
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
+
+<?php
+
+      if(isset($_POST['save']))
+      { 
+          $client_name = $_POST['client_name'];
+          $first_name = $_POST['first_name'];
+          $last_name = $_POST['last_name'];
+          $date_join = $_POST['date_join'];
+          $date_expire = $_POST['date_expire'];
+          $address = $_POST['address'];
+
+          $query = mysqli_query($connection, "INSERT INTO `users`( `username`, `password`, `role`, `date_join`, `date_expired`) VALUES ('$client_name', md5('123456'), 2, '$date_join', '$date_expire')");
+
+          $getID = mysqli_query($connection, "SELECT * FROM users WHERE username = '$client_name'");
+          $row = mysqli_fetch_array($getID);
+          $last_id = $row['users_id'];
+
+          $query_details = mysqli_query($connection, "INSERT INTO `user_details`(`users_id`, `first_name`, `middle_name`, `last_name`, `address`, `sponsor_id`, `wallet_id`) VALUES ('$last_id', '$first_name', '', '$last_name', '$address', 0, 0)");
+
+          echo "<script>window.location.replace('client.php')</script>";
+      }
+
+?>
 
 <!-- jQuery -->
 <script src="../back/plugins/jquery/jquery.min.js"></script>

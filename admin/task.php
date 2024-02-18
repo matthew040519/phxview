@@ -76,16 +76,19 @@
                   </tr>
                   </thead>
                   <tbody>
-                    <!-- <tr>
-                        <td>Trident</td>
-                        <td>Internet
-                        Explorer 4.0
-                        </td>
-                        <td>Win 95+</td>
-                        <td> 4</td>
-                        <td>X</td>
-                        <td>X</td>
-                    </tr> -->
+                    <?php
+                      $query = mysqli_query($connection, "SELECT task_name, url, a.username as client, b.username as created_by, task1.date_join, task1.date_expired, rate FROM `task1` INNER JOIN users as a ON a.users_id=task1.client_id INNER JOIN users as b ON b.users_id=task1.created_by");
+                      while($row = mysqli_fetch_array($query)){
+                    ?>
+                    <tr>
+                        <td><?php echo $row['task_name']; ?></td>
+                        <td><?php echo $row['date_join']; ?></td>
+                        <td><?php echo $row['date_expired']; ?></td>
+                        <td><?php echo $row['client']; ?></td>
+                        <td><?php echo $row['rate']; ?></td>
+                        <td><?php echo $row['created_by']; ?></td>
+                    </tr>
+                    <?php } ?>
                   </tbody>
                 </table>
               </div>
@@ -110,35 +113,45 @@
               </button>
             </div>
             <div class="modal-body">
-              <form action="">
+              <form method="POST" enctype="multipart/form-data">
                 <div class="row">
                     <div class="col-md-12 mb-3">
                         <label for="">Task Name</label>
-                        <input type="text" class="form-control">
+                        <input type="text" name="task_name" class="form-control">
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="">Video Task</label>
+                        <input type="file" name="url" class="form-control">
                     </div>
                     <div class="col-md-12  mb-3">
                         <label for="">Client</label>
-                        <select name="" class="form-control" id=""></select>
+                        <select name="client" class="form-control" id="">
+                          <?php $query = mysqli_query($connection, "SELECT username, users_id FROM users WHERE role = 2");
+                          while($row = mysqli_fetch_array($query)){ ?>
+                            <option value="<?php echo $row['users_id']; ?>"><?php echo $row['username']; ?></option>
+                          <?php } ?>
+                        </select>
                     </div>
                     <div class="col-md-12  mb-3">
                         <label for="">Task Date</label>
-                        <input type="date" class="form-control">
+                        <input type="date" name="date_started" class="form-control">
                     </div>
                     <div class="col-md-12 mb-3">
                         <label for="">Task Expired</label>
-                        <input type="date" class="form-control">
+                        <input type="date" name="date_expired" class="form-control">
                     </div>
                     <div class="col-md-12 mb-3">
-                        <label for="">Rate</label>
-                        <input type="number" class="form-control">
+                        <label for="">PHXCoin Rate</label>
+                        <input type="number" name="rate" class="form-control">
                     </div>
                 </div>
-              </form>
+              
             </div>
             <div class="modal-footer justify-content-between">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="submit" name="save" class="btn btn-primary">Save changes</button>
             </div>
+            </form>
           </div>
           <!-- /.modal-content -->
         </div>
@@ -156,6 +169,35 @@
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
+
+<?php
+
+
+        if(isset($_POST['save']))
+        {
+            $target = "../storage/video/". basename($_FILES['url']['name']);
+            $url = $_FILES['url']['name'];
+            $task_name = $_POST['task_name'];
+            $client = $_POST['client'];
+            $date_started = $_POST['date_started'];
+            $date_expired = $_POST['date_expired'];
+            $rate = $_POST['rate'];
+            $id = $_SESSION['id'];
+
+
+            if (move_uploaded_file($_FILES['url']['tmp_name'], $target)){
+
+              $query = mysqli_query($connection, "INSERT INTO `task1`(`client_id`, `task_name`, `created_by`, `url`, `date_join`, `date_expired`, `rate`) VALUES ('$client', '$task_name', '$id', '$url',  '$date_started', '$date_expired', '$rate')");
+
+              echo "<script>alert('Successfully Upload')</script>";
+              echo "<script>window.location.replace('task.php')</script>";
+            } else {
+              echo "<script>alert('Error!')</script>";
+            }
+        }
+
+
+?>
 
 <!-- jQuery -->
 <script src="../back/plugins/jquery/jquery.min.js"></script>

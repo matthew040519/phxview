@@ -27,6 +27,7 @@
   <link rel="stylesheet" href="../back/plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="../back/plugins/summernote/summernote-bs4.min.css">
+  
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -65,19 +66,23 @@
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12">
-          <iframe width="100%" height="360" src="https://www.youtube.com/embed/ClS213B-lVM" title="WARRIORS at JAZZ | FULL GAME HIGHLIGHTS | February 15, 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-        </div>
+        
         <!-- Small boxes (Stat box) -->
         <div class="row">
           <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>0.00</h3>
-
+              <?php 
+                $id = $_SESSION['id'];
+                $phx_coin = mysqli_query($connection, "SELECT sum(rate) as total_rate FROM member_task1 WHERE member_id = $id"); 
+                $phx_coin_row = mysqli_fetch_array($phx_coin);
+                if($phx_coin_row['total_rate'] > 0){
+              ?>
+                <h3><?php echo $phx_coin_row['total_rate']; ?></h3>
+                  <?php } else { ?>
+                    <h3>0.00</h3>
+                    <?php } ?>
                 <p>PhxCoin</p>
               </div>
               <div class="icon">
@@ -121,8 +126,7 @@
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>0</h3>
-
+                <h3 id="time"></h3>
                 <p>Days Remaining</p>
               </div>
               <div class="icon">
@@ -195,10 +199,105 @@
           </div>
           
         </div>
+        <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                <form method="POST">
+          <?php 
+            $id = $_SESSION['id'];
+            $query = mysqli_query($connection, "SELECT * FROM member_task1 WHERE member_id = $id ORDER BY id DESC LIMIT 1");
+            $check = mysqli_num_rows($query);
+            if($check > 0)
+            {
+                $row = mysqli_fetch_array($query);
+                $task_id = $row['task_id'] + 1;
+
+                $query_task = mysqli_query($connection, "SELECT * FROM task1 WHERE task_id = $task_id");
+                $check_task = mysqli_num_rows($query_task);
+                if($check_task > 0){
+                    $row_task = mysqli_fetch_array($query_task); ?>
+
+                    <input type="hidden" name="task_id" value="<?php echo $row_task['task_id']; ?>">
+                    <input type="hidden" name="rate" value="<?php echo $row_task['rate']; ?>">
+                    <div class="card-header" style="text-align: center;">
+                      <h3><?php echo $row_task['task_name']; ?></h3>
+                    </div>
+                    <div class="card-body">
+                      <video height="400px" width="100%" controls id="myVideo">
+                        <source src="../storage/video/<?php echo $row_task['url']; ?>" type="video/mp4"></source>
+                      </video>
+                    </div>
+
+                    <div class="card-footer">
+                      <a class="btn btn-primary" onclick="myFunction()">Finish</a>
+                      <button class="btn btn-success" type="submit" name="claim" id="claim" style="display: none;">Claim your rewards</button>
+                    </div>
+
+           <?php } else {  ?>
+             <div class="card-body">
+                <div style="text-align: center;">
+                  <h1>No Task Available..</h1>
+                </div>
+             </div>
+          <?php } } 
+           else {
+            $query_task = mysqli_query($connection, "SELECT * FROM task1 LIMIT 1");
+                $row_task = mysqli_fetch_array($query_task);
+                $check_task = mysqli_num_rows($query_task);
+                if($check_task > 0){
+          ?>
+                <input type="hidden" name="task_id" value="<?php echo $row_task['task_id']; ?>">
+                <input type="hidden" name="rate" value="<?php echo $row_task['rate']; ?>">
+                <div class="card-header" style="text-align: center;">
+                  <h3><?php echo $row_task['task_name']; ?></h3>
+                </div>
+                <div class="card-body">
+                <!-- style="pointer-events: none;" -->
+                  <video height="400px" width="100%" controls  id="myVideo">
+                    <source src="../storage/video/<?php echo $row_task['url']; ?>" type="video/mp4"></source>
+                  </video>
+                </div>
+              
+                <div class="card-footer">
+                  <a class="btn btn-primary" onclick="myFunction()">Finish</a>
+                  <button class="btn btn-success" type="submit" name="claim" id="claim" style="display: none;">Claim your rewards</button>
+                </div>
+            
+          <?php } else { ?>
+            <div class="card-body">
+                <div style="text-align: center;">
+                  <h1>No Task Available..</h1>
+                </div>
+             </div>
+            <?php } } ?>
+          
+          </form>
+            </div>
+          </div>
+        </div>
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
   </div>
+  <?php
+
+    if(isset($_POST['claim']))
+    {
+
+        date_default_timezone_set('Asia/Manila');
+        $tdate = date("Y-m-d");
+        $task_id = $_POST['task_id'];
+        $id = $_SESSION['id'];
+        $rate = $_POST['rate'];
+
+        $query = mysqli_query($connection, "INSERT INTO `member_task1`( `task_id`, `member_id`, `status`, `rate`, `date`) 
+        VALUES ('$task_id', '$id', 0, '$rate', '$tdate')");
+
+        echo "<script>window.location.replace('index.php')</script>";
+
+    }
+  
+  ?>
   <!-- /.content-wrapper -->
   <?php include('../include/footer.php'); ?>
 
@@ -211,6 +310,52 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
+<script>
+  
+  function myFunction() {
+    var x = document.getElementById("myVideo").ended;
+    // alert(x);
+    if(x)
+    {
+      var claim = document.getElementById('claim');
+      claim.style.removeProperty("display");
+    }
+  }
+</script>
+<?php $date1 = date_create($_SESSION['date_join']); ?>
+<script>
+
+    // function everySeconds(date)
+    // {
+    //     return <?php ?>
+    // }
+    var countDownDate = new Date("<?php $date = date_create($_SESSION['date_join']); date_add($date,date_interval_create_from_date_string("120 days")); echo date_format($date, 'F j, Y H:i:s');?>").getTime();
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+      var now = new Date("<?php date_add($date1,date_interval_create_from_date_string("1 seconds")); echo date_format($date1, 'F j, Y H:i:s');?>").getTime();
+      
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the result in the element with id="demo"
+      // document.getElementById("time").innerHTML = days + "d " + hours + "h "
+      // + minutes + "m " + seconds + "s ";
+      document.getElementById("time").innerHTML = days + "d " + hours + "h ";
+
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  </script>
 <script src="../back/plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="../back/plugins/jquery-ui/jquery-ui.min.js"></script>
