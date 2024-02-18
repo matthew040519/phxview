@@ -19,7 +19,7 @@
 
   <style>
     body{
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Open Sans' sans-serif;
     }
   </style>
 
