@@ -33,9 +33,9 @@
 <div class="wrapper">
 
   <!-- Preloader -->
-  <div class="preloader flex-column justify-content-center align-items-center">
+  <!-- <div class="preloader flex-column justify-content-center align-items-center">
     <img class="animation__shake" src="../logo/logo.png" alt="AdminLTELogo" height="150" width="150">
-  </div>
+  </div> -->
 
   <!-- Navbar -->
     <?php include('../include/navbar.php'); ?>
@@ -76,10 +76,13 @@
               <?php 
                 $id = $_SESSION['id'];
                 $phx_coin = mysqli_query($connection, "SELECT sum(rate) as total_rate FROM member_task1 WHERE member_id = $id"); 
+                $convert = mysqli_query($connection, "SELECT sum(phxcoin) as phxcoin, sum(aznt) as aznt FROM conversion WHERE member_id = $id");
                 $phx_coin_row = mysqli_fetch_array($phx_coin);
+                $convert_row = mysqli_fetch_array($convert);
+                $total = $phx_coin_row['total_rate'] - $convert_row['phxcoin'];
                 if($phx_coin_row['total_rate'] > 0){
               ?>
-                <h3><?php echo $phx_coin_row['total_rate']; ?></h3>
+                <h3><?php echo $total; ?></h3>
                   <?php } else { ?>
                     <h3>0.00</h3>
                     <?php } ?>
@@ -88,7 +91,7 @@
               <div class="icon">
                 <i class="fas fa-coins"></i>
               </div>
-              <a href="#" class="small-box-footer">Convert <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="#" class="small-box-footer" data-toggle="modal" data-target="#modal-default">Convert <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -96,7 +99,7 @@
             <!-- small box -->
             <div class="small-box bg-secondary">
               <div class="inner">
-                <h3>0.00</h3>
+                <h3><?php echo number_format($convert_row['aznt'], 2); ?></h3>
 
                 <p>AZNT</p>
               </div>
@@ -277,9 +280,69 @@
         </div>
       </div><!-- /.container-fluid -->
     </section>
+    <div class="modal fade" id="modal-default">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Convert</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form method="POST">
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="">Convertion of PhxCoin to AZNT</label>
+                        <input type="text" readonly name="client_name" value="5:1" class="form-control">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="">PhxCoin</label>
+                        <input type="number" name="phxcoin" class="form-control">
+                    </div>
+                </div>
+              
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="submit" name="save" class="btn btn-primary">Save changes</button>
+            </div>
+            </form>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+   
     <!-- /.content -->
   </div>
   <?php
+
+    if(isset($_POST['save']))
+    {
+        $phxcoin = $_POST['phxcoin'];
+        $id = $_SESSION['id'];
+        $convert = $phxcoin / 5;
+
+        $phx_coin = mysqli_query($connection, "SELECT sum(rate) as total_rate FROM member_task1 WHERE member_id = $id"); 
+                $convert = mysqli_query($connection, "SELECT sum(phxcoin) as phxcoin FROM conversion WHERE member_id = $id");
+                $phx_coin_row = mysqli_fetch_array($phx_coin);
+                $convert_row = mysqli_fetch_array($convert);
+                $total = $phx_coin_row['total_rate'] - $convert_row['phxcoin'];
+
+        if($phxcoin > $total)
+        {
+            echo "<script>alert('Insufficient Balance!')</script>";
+        }
+        else{
+          mysqli_query($connection, "INSERT INTO `conversion`( `member_id`, `phxcoin`, `aznt`) 
+          VALUES ('$id', '$phxcoin', '$convert')");
+          echo "<script>window.location.replace('index.php')</script>";
+        }
+       
+
+        
+    }
 
     if(isset($_POST['claim']))
     {
