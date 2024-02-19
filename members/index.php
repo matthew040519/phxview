@@ -89,7 +89,7 @@
                 <p>PhxCoin</p>
               </div>
               <div class="icon">
-                <i class="fas fa-coins"></i>
+                <i><img width="80px" style="margin-bottom: 100%;" height="100%" src="../logo/phxcoin.ico" alt=""></i>
               </div>
               <a href="#" class="small-box-footer" data-toggle="modal" data-target="#modal-default">Convert <i class="fas fa-arrow-circle-right"></i></a>
             </div>

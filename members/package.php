@@ -71,7 +71,7 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-header">
-                            <img class="img-thumbmail" width="100%" src="../logo/logo.png" alt="">
+                            <img class="img-thumbmail" width="100%" src="../logo/package.png" alt="">
                         </div>
                         <div class="card-body">
                             <h5>Bronze Package</h5>
@@ -86,7 +86,7 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-header">
-                            <img class="img-thumbmail" width="100%" src="../logo/logo.png" alt="">
+                            <img class="img-thumbmail" width="100%" src="../logo/package.png" alt="">
                         </div>
                         <div class="card-body">
                             <h5>Silver Package</h5>
@@ -101,7 +101,7 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-header">
-                            <img class="img-thumbmail" width="100%" src="../logo/logo.png" alt="">
+                            <img class="img-thumbmail" width="100%" src="../logo/package.png" alt="">
                         </div>
                         <div class="card-body">
                             <h5>Gold Package</h5>
@@ -119,7 +119,7 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-header">
-                            <img class="img-thumbmail" width="100%" src="../logo/logo.png" alt="">
+                            <img class="img-thumbmail" width="100%" src="../logo/package.png" alt="">
                         </div>
                         <div class="card-body">
                             <h5>Platinum Package</h5>
@@ -135,7 +135,7 @@
         <div class="col-md-4">
                     <div class="card">
                         <div class="card-header">
-                            <img class="img-thumbmail" width="100%" src="../logo/logo.png" alt="">
+                            <img class="img-thumbmail" width="100%" src="../logo/package.png" alt="">
                         </div>
                         <div class="card-body">
                             <h5>VIP Package</h5>
