@@ -324,7 +324,7 @@
     {
         $phxcoin = $_POST['phxcoin'];
         $id = $_SESSION['id'];
-        $convert = $phxcoin / 5;
+        $aznt_convert = $phxcoin / 5;
 
         $phx_coin = mysqli_query($connection, "SELECT sum(rate) as total_rate FROM member_task1 WHERE member_id = $id"); 
                 $convert = mysqli_query($connection, "SELECT sum(phxcoin) as phxcoin FROM conversion WHERE member_id = $id");
@@ -338,11 +338,9 @@
         }
         else{
           mysqli_query($connection, "INSERT INTO `conversion`( `member_id`, `phxcoin`, `aznt`) 
-          VALUES ('$id', '$phxcoin', '$convert')");
+          VALUES ('$id', '$phxcoin', '$aznt_convert')");
           echo "<script>window.location.replace('index.php')</script>";
         }
-       
-
         
     }
 
