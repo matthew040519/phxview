@@ -39,12 +39,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Reports</h1>
+            <h1 class="m-0">Wallet Report</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Reports</li>
+              <li class="breadcrumb-item active">Wallet Report</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -64,21 +64,28 @@
               </div>
               <!-- /.card-header -->
               <div class="card-body">
-                <!-- <table id="example1" class="table table-bordered table-striped">
+                <table id="example1" class="table table-bordered table-striped">
                   <thead>
                   <tr>
-                    <th>Fullname</th>
-                    <th>Username</th>
-                    <th>Payout Amount</th>
-                    <th>Date Requested</th>
-                    <th>Date Approve</th>
-                    <th>Status</th>
+                    <th>Date</th>
+                    <th>Rate</th>
                   </tr>
                   </thead>
                   <tbody>
-                    
+                    <?php 
+                      $id = $_SESSION['id'];
+
+                      $query = mysqli_query($connection, "SELECT * FROM member_wallet WHERE member_id = $id");
+
+                      while($row = mysqli_fetch_array($query)){
+                    ?>
+                    <tr>
+                      <td><?php echo $row['tdate']; ?></td>
+                      <td><?php echo number_format($row['rate'], 2); ?></td>
+                    </tr>
+                    <?php } ?>
                   </tbody>
-                </table> -->
+                </table>
               </div>
               <!-- /.card-body -->
             </div>

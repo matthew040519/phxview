@@ -203,13 +203,34 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="reports.php" class="nav-link">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-file-contract"></i>
               <p>
-                Reports
-                <!-- <span class="right badge badge-danger">New</span> -->
+              Reports
+                <i class="right fas fa-angle-left"></i>
               </p>
             </a>
+            
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="convertreport.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Conversion Report</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="claimreport.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Claim Report</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="walletreport.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Wallet Report</p>
+                </a>
+              </li>
+            </ul>
           </li>
           <?php } else { ?>
             
