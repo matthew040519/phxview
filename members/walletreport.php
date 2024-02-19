@@ -80,7 +80,7 @@
                       while($row = mysqli_fetch_array($query)){
                     ?>
                     <tr>
-                      <td><?php echo $row['tdate']; ?></td>
+                      <td><?php echo $row['date']; ?></td>
                       <td><?php echo number_format($row['rate'], 2); ?></td>
                     </tr>
                     <?php } ?>
