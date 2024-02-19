@@ -75,14 +75,14 @@
               <div class="inner">
               <?php 
                 $id = $_SESSION['id'];
-                $phx_coin = mysqli_query($connection, "SELECT sum(rate) as total_rate FROM member_task1 WHERE member_id = $id"); 
+                $phx_coin = mysqli_query($connection, "SELECT sum(rate) as total_rate FROM member_wallet WHERE member_id = $id"); 
                 $convert = mysqli_query($connection, "SELECT sum(phxcoin) as phxcoin, sum(aznt) as aznt FROM conversion WHERE member_id = $id");
                 $phx_coin_row = mysqli_fetch_array($phx_coin);
                 $convert_row = mysqli_fetch_array($convert);
                 $total = $phx_coin_row['total_rate'] - $convert_row['phxcoin'];
                 if($phx_coin_row['total_rate'] > 0){
               ?>
-                <h3><?php echo $total; ?></h3>
+                <h3><?php echo number_format($total, 2); ?></h3>
                   <?php } else { ?>
                     <h3>0.00</h3>
                     <?php } ?>
@@ -145,14 +145,24 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>_</h3>
+                <?php 
+                $id = $_SESSION['id'];
+                $query = mysqli_query($connection, "SELECT sum(rate) as total_rate FROM member_task1 WHERE member_id = $id");
+                $wallet_row = mysqli_fetch_array($query);
+
+                $query1 = mysqli_query($connection, "SELECT sum(rate) as total_rate FROM member_wallet WHERE member_id = $id");
+                $wallet_row1 = mysqli_fetch_array($query1);
+
+                $total = $wallet_row['total_rate'] - $wallet_row1['total_rate'];
+                ?>
+                <h3><?php echo number_format($total, 2); ?></h3>
 
                 <p>Rewards Wallet</p>
               </div>
               <div class="icon">
                 <i class="fas fa-wallet"></i>
               </div>
-              <a href="#" class="small-box-footer"> <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="#" class="small-box-footer" data-toggle="modal" data-target="#modal-default1">Transfer <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -227,7 +237,7 @@
                       Rewards: <?php echo number_format($row_task['rate'], 2); ?> PHXCOIN
                     </div>
                     <div class="card-body">
-                      <video height="400px" width="100%" controls id="myVideo">
+                      <video height="300px" width="100%" controls id="myVideo">
                         <source src="../storage/video/<?php echo $row_task['url']; ?>" type="video/mp4"></source>
                       </video>
                     </div>
@@ -258,7 +268,7 @@
                 </div>
                 <div class="card-body">
                 <!-- style="pointer-events: none;" -->
-                  <video height="400px" width="100%" controls  id="myVideo">
+                  <video height="300px" width="100%" controls  id="myVideo">
                     <source src="../storage/video/<?php echo $row_task['url']; ?>" type="video/mp4"></source>
                   </video>
                 </div>
@@ -315,10 +325,67 @@
         </div>
         <!-- /.modal-dialog -->
       </div>
+
+      <div class="modal fade" id="modal-default1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Transfer</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form method="POST">
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="">Wallet</label>
+                        <input type="number" name="wallet" class="form-control">
+                    </div>
+                </div>
+              
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="submit" name="transfer" class="btn btn-primary">Save changes</button>
+            </div>
+            </form>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+   
+   
    
     <!-- /.content -->
   </div>
   <?php
+
+    if(isset($_POST['transfer']))
+    {
+        $wallet = $_POST['wallet'];
+        $id = $_SESSION['id'];
+
+        $query = mysqli_query($connection, "SELECT sum(rate) as total_rate FROM member_task1 WHERE member_id = $id");
+                $wallet_row = mysqli_fetch_array($query);
+
+                $query1 = mysqli_query($connection, "SELECT sum(rate) as total_rate FROM member_wallet WHERE member_id = $id");
+                $wallet_row1 = mysqli_fetch_array($query1);
+
+                $total = $wallet_row['total_rate'] - $wallet_row1['total_rate'];
+
+        if($wallet > $total)
+        {
+            echo "<script>alert('Insufficient Balance!')</script>";
+        }
+        else{
+          mysqli_query($connection, "INSERT INTO `member_wallet`(`member_id`, `rate`) 
+          VALUES ('$id', '$wallet')");
+          echo "<script>window.location.replace('index.php')</script>";
+        }
+        
+    }
 
     if(isset($_POST['save']))
     {
@@ -326,7 +393,7 @@
         $id = $_SESSION['id'];
         $aznt_convert = $phxcoin / 5;
 
-        $phx_coin = mysqli_query($connection, "SELECT sum(rate) as total_rate FROM member_task1 WHERE member_id = $id"); 
+        $phx_coin = mysqli_query($connection, "SELECT sum(rate) as total_rate FROM member_wallet WHERE member_id = $id"); 
                 $convert = mysqli_query($connection, "SELECT sum(phxcoin) as phxcoin FROM conversion WHERE member_id = $id");
                 $phx_coin_row = mysqli_fetch_array($phx_coin);
                 $convert_row = mysqli_fetch_array($convert);

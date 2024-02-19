@@ -13,15 +13,9 @@
   <title>PHXClick</title>
 
   <!-- Custom Google fonts -->
-  <!-- <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,300,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,300,700' rel='stylesheet' type='text/css'>
   <link href="http://fonts.googleapis.com/css?family=Crimson+Text:400,600" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css"> -->
-
-  <style>
-    body{
-      font-family: 'Open Sans' sans-serif;
-    }
-  </style>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css">
 
   <!-- Bootstrap CSS Style -->
   <link rel="stylesheet" href="front_page/assets/css/bootstrap.min.css">
@@ -228,7 +222,7 @@ h4{text-align:center;margin:30px 0;color:#444}
   <!-- Hero
   ================================================== -->
     <section>
-      <div id="hero-section" class="landing-hero" data-stellar-background-ratio="0">
+      <div id="hero-section" class="landing-hero" style="background-image: url('front_page/assets/images/bg.jpg')" data-stellar-background-ratio="0">
         <div class="hero-content">
           <div class="container">
             <div class="row">
@@ -247,11 +241,11 @@ h4{text-align:center;margin:30px 0;color:#444}
                       <li class="caption">
                         <h1>Crypto Token Integration</h1>
                         <div class="div-line"></div>
-                        <p class="hero">AZNT TOKEN &amp; other more token</p>
+                        <p class="hero">Crypto TOKEN &amp; other more token</p>
                       </li>
 
                       <li class="caption">
-                        <h1>AZ PHX Hub</h1>
+                        <h1>PHX Hub</h1>
                         <div class="div-line"></div>
                         <p class="hero">Announcement, airdrops plus gadgets &amp; other more.</p>
                       </li>
@@ -344,7 +338,7 @@ h4{text-align:center;margin:30px 0;color:#444}
     </section>
 
 
-    <section>
+     <section>
       <div id="milestone-section" class="pad-sec">
         <div class="container">
           <div class="title-section text-center animated out" data-animation="fadeInUp" data-delay="0">
@@ -361,7 +355,7 @@ h4{text-align:center;margin:30px 0;color:#444}
                     <div class="main-timeline4">
                         <div class="timeline">
                             <a href="#" class="timeline-content">
-                                <span class="year">2018</span>
+                                <span class="year">2023</span>
                                 <div class="inner-content">
                                     <h3 class="title">Phase 1: Foundation</h3>
                                     <p class="description">
@@ -372,7 +366,7 @@ h4{text-align:center;margin:30px 0;color:#444}
                         </div>
                         <div class="timeline">
                             <a href="#" class="timeline-content">
-                                <span class="year">2017</span>
+                                <span class="year">2024</span>
                                 <div class="inner-content">
                                     <h3 class="title">Phase 2: Launch And Initial Operation</h3>
                                     <p class="description">
@@ -383,7 +377,7 @@ h4{text-align:center;margin:30px 0;color:#444}
                         </div>
                         <div class="timeline">
                             <a href="#" class="timeline-content">
-                                <span class="year">2016</span>
+                                <span class="year">2025</span>
                                 <div class="inner-content">
                                     <h3 class="title">Phase 3: Expansion and Diversification</h3>
                                     <p class="description">
@@ -394,7 +388,7 @@ h4{text-align:center;margin:30px 0;color:#444}
                         </div>
                         <div class="timeline">
                             <a href="#" class="timeline-content">
-                                <span class="year">2015</span>
+                                <span class="year">2026</span>
                                 <div class="inner-content">
                                     <h3 class="title">Phase 4: Innovation And differentiation</h3>
                                     <p class="description">
@@ -405,7 +399,7 @@ h4{text-align:center;margin:30px 0;color:#444}
                         </div>
                         <div class="timeline">
                             <a href="#" class="timeline-content">
-                                <span class="year">2014</span>
+                                <span class="year">2027</span>
                                 <div class="inner-content">
                                     <h3 class="title">Phase 5: Innovation And differentiation</h3>
                                     <p class="description">
@@ -419,7 +413,7 @@ h4{text-align:center;margin:30px 0;color:#444}
             </div>
         </div>
       </div>
-    </section>
+    </section>    </section>
 
     <!-- Features services
     ================================================== -->
@@ -564,22 +558,7 @@ h4{text-align:center;margin:30px 0;color:#444}
 
     <!-- Video section
     ================================================== -->
-    <section>
-      <div id="video-section" data-stellar-background-ratio="0">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-sm-offset-3">
-              <div class="video-section-content text-center">
-                <a href="http://vimeo.com/channels/staffpicks/116829150" class="video-pop-up"><i class="fa fa-play"></i></a>
-                <div class="video-head">Introducing Video</div>
-                <div class="video-sub-heading">Check out our video presentation</div>
-              </div>
-            </div> <!-- end col-sm-6 -->
-          </div> <!-- end row -->
-        </div> <!-- end container -->
-      </div>
-    </section>
-    <!-- End Video section -->
+   
 
     <!-- Team
     ================================================== -->
@@ -683,115 +662,8 @@ h4{text-align:center;margin:30px 0;color:#444}
 
     <!-- About Team
     ================================================== -->
-    <section>
-      <div id="about-team">
-        <div class="container">
-            <div class="row">
+    
 
-              <!--<div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="title-section">
-                  <h3>Our team skills</h3>
-                </div>
-                <p>Sit ad etiam dissentias, viderer intellegebat usu et, per aliquam delectus ut. In inermis suavitate tincidunt quo, habeo lorem quis nulla eget, dictum pretium magna. Praesent id metus mattis tellus consectetur posuere. Aenean vel enim ut massa luctus efficitur a nec magna.</p>
-              </div> <!-- end col-md-6 -->
-
-              <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="progress-bars">
-                  
-                  <!-- skillbar -->
-                  <div class="p-bar">
-                    <!-- meta -->
-                    <!-- <div class="progress-meta">
-                      <h6 class="progress-title">photoshop</h6>
-                      <h6 class="progress-value">75%</h6>
-                    </div>
-
-                    <div class="progress">
-                      <div class="progress-bar" aria-valuenow="75" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-
-                  </div> <!-- end p-bar -->
-
-                  <!-- skillbar -->
-                  <div class="p-bar">
-                    <!-- meta -->
-                    <!-- <div class="progress-meta">
-                      <h6 class="progress-title">html</h6>
-                      <h6 class="progress-value">95%</h6>
-                    </div>
-
-                    <div class="progress">
-                      <div class="progress-bar" aria-valuenow="95" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-
-                  </div> <!-- end p-bar -->
-
-                  <!-- skillbar -->
-                  <div class="p-bar">
-                    <!-- meta -->
-                    <!-- <div class="progress-meta">
-                      <h6 class="progress-title">css</h6>
-                      <h6 class="progress-value">85%</h6>
-                    </div>
-
-                    <div class="progress">
-                      <div class="progress-bar" aria-valuenow="85" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-
-                  </div> <!-- end p-bar -->
-
-                  <!-- skillbar -->
-                  <div class="p-bar">
-                    <!-- meta -->
-                    <!-- <div class="progress-meta">
-                      <h6 class="progress-title">jquery</h6>
-                      <h6 class="progress-value">73%</h6>
-                    </div>
-
-                    <div class="progress">
-                      <div class="progress-bar" aria-valuenow="73" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-
-                  </div> <!-- end p-bar -->
-
-                </div> <!-- end skills-bars -->
-              </div> <!-- end col-md-6 -->
-            </div> <!-- end row -->
-        </div>
-      </div>
-    </section>
-    <!-- End About Team -->
-
-    <!-- Banner-Services
-    ================================================== -->
-    <section>
-      <div id="banner-services" data-stellar-background-ratio="0">
-        <div class="container">
-          <div class="row">
-
-            <div class="col-sm-6">
-              <div class="banner-content animated out" data-animation="fadeInUp" data-delay="0">
-                <h3 class="banner-heading">Looking for exclusive digital services?</h3>
-                <div class="banner-decription">
-                  Proin fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Integer non dapibus diam, ac eleifend lectus.
-                </div> <!-- end banner-decription -->
-                <div>
-                  <a href="contact.html" class="btn btn-sm btn-clean">Lets talk</a>
-                </div>
-              </div> <!-- end banner-content -->
-            </div> <!-- end col-sm-6 -->
-
-            <div class="col-sm-6">
-              <div class="banner-image animated out" data-animation="fadeInUp" data-delay="0">
-                <img src="assets/images/temp/banner-img.png" alt="">
-              </div> <!-- end banner-image -->
-            </div> <!-- end col-sm-6 -->
-            
-          </div> <!-- end row -->
-        </div> <!-- end container -->
-      </div>
-    </section>
-    <!-- End Banner services section -->
 
     <!-- Features App 2
     ================================================== -->
@@ -905,86 +777,10 @@ h4{text-align:center;margin:30px 0;color:#444}
       <div class="sep-section"></div>
     </section>
 
-    <!-- Screenshots
-    ================================================== -->
-      <section>
-        <div id="screenshots-section" class="pad-sec">
-          <div class="container">
-           <div class="title-section text-center animated out" data-animation="fadeInUp" data-delay="0">
-              <div class="row">
-                <div class="col-sm-8 col-sm-offset-2">
-                  <h2>Screenshots gallery</h2>
-                  <hr>
-                  <p>Seamlessly restore client-focused potentialities rather than functional strategic theme areas.</p>
-              </div>
-            </div> <!-- End row -->
-          </div> <!-- end title-section -->
-
-            <div class="row">
-              <div class="col-md-12">
-                <div class="screenshots-carousel animated out" data-animation="fadeInUp" data-delay="0">
-
-                  <div class="shot">
-                    <div class="screen">
-                      <a class="zoom" href="front_page/assets/images/screenshots/1.jpg"><img src="assets/images/screenshots/1.jpg" alt="screenshot"></a>
-                    </div> <!-- end screen -->
-                  </div> <!-- end shot -->
-
-                  <div class="shot">
-                    <div class="screen">
-                      <a class="zoom" href="front_page/assets/images/screenshots/2.jpg"><img src="assets/images/screenshots/1.jpg" alt="screenshot"></a>
-                    </div> <!-- end screen -->
-                  </div> <!-- end shot -->
-
-                  <div class="shot">
-                    <div class="screen">
-                      <a class="zoom" href="front_page/assets/images/screenshots/1.jpg"><img src="assets/images/screenshots/2.jpg" alt="screenshot"></a>
-                    </div> <!-- end screen -->
-                  </div> <!-- end shot -->
-
-                  <div class="shot">
-                    <div class="screen">
-                      <a class="zoom" href="front_page/assets/images/screenshots/2.jpg"><img src="assets/images/screenshots/1.jpg" alt="screenshot"></a>
-                    </div> <!-- end screen -->
-                  </div> <!-- end shot -->
-
-
-                  <div class="shot">
-                    <div class="screen">
-                      <a class="zoom" href="front_page/assets/images/screenshots/1.jpg"><img src="assets/images/screenshots/2.jpg" alt="screenshot"></a>
-                    </div> <!-- end screen -->
-                  </div> <!-- end shot -->
-
-                  <div class="shot">
-                    <div class="screen">
-                      <a class="zoom" href="front_page/assets/images/screenshots/2.jpg"><img src="assets/images/screenshots/1.jpg" alt="screenshot"></a>
-                    </div> <!-- end screen -->
-                  </div> <!-- end shot -->
-
-                  <div class="shot">
-                    <div class="screen">
-                      <a class="zoom" href="front_page/assets/images/screenshots/1.jpg"><img src="assets/images/screenshots/2.jpg" alt="screenshot"></a>
-                    </div> <!-- end screen -->
-                  </div> <!-- end shot -->
-
-                  <div class="shot">
-                    <div class="screen">
-                      <a class="zoom" href="front_page/assets/images/screenshots/2.jpg"><img src="assets/images/screenshots/1.jpg" alt="screenshot"></a>
-                    </div> <!-- end screen -->
-                  </div> <!-- end shot -->
-
-                </div> <!-- end screenshots-carousel -->
-              </div> <!-- end col-md-12 -->
-            </div> <!-- end row -->
-          </div><!--  end container -->
-        </div>
-      </section>
-      <!-- End screenshots-section -->
-
       <!-- Clients-section
     ================================================== -->
     <section>
-      <div id="clients-section" class="clients-bg" data-stellar-background-ratio="0">
+      <div id="clients-section" style="background-image: url('front_page/assets/images/bg.jpg')" class="clients-bg" data-stellar-background-ratio="0">
         <div class="container">
           <div class="row">
              
@@ -1191,22 +987,22 @@ h4{text-align:center;margin:30px 0;color:#444}
                     <!-- Testimonial -->
                     <li>
                       <img src="front_page/assets/images/temp/client-photo.jpg" alt="">
-                      <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculusultricies porta posuere.</p>
-                      <div class="testimonials-author"> ClasDesign - Front End Developer </div>
+                      <p>Demo</p>
+                      <div class="testimonials-author"> CLIENT </div>
                     </li>
                     
                     <!-- Testimonial -->
                     <li>
                       <img src="front_page/assets/images/temp/client-photo.jpg" alt="">
-                      <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculusultricies porta posuere <a href="#">http://goo.gl/1OhxkS</a>.</p>
-                      <div class="testimonials-author">John Doe -  Web Developer</div>
+                      <p>DEMO<a href="#"></a>.</p>
+                      <div class="testimonials-author">CLIENT</div>
                     </li>
                     
                     <!-- Testimonial -->
                     <li>
                       <img src="front_page/assets/images/temp/client-photo.jpg" alt="">
-                      <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculusultricies porta posuere. <a href="#">http://goo.gl/1OhxkS</a>.</p>
-                      <div class="testimonials-author">John Doe - Web Designer</div>
+                      <p>DEMO <a href="#"></a></p>
+                      <div class="testimonials-author">CLIENT</div>
                     </li>
 
                   </ul>

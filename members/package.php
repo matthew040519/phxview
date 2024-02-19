@@ -68,69 +68,88 @@
           </div>
           <div class="col-md-12">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-header">
-                            <img class="img-thumbmail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGEKk1DaaAsuqNnnM9yrZ_6OK6I7CiM1EFEg&usqp=CAU" alt="">
+                            <img class="img-thumbmail" width="100%" src="../logo/logo.png" alt="">
                         </div>
                         <div class="card-body">
-                            <h5>Package 1</h5>
+                            <h5>Bronze Package</h5>
                             <!-- <label for="">Price:  &#8369; 500.00</label> -->
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p>2 clicks / 16 videos <br> Airdrop: 200 <br> Phxrewards: 20 Phx per Day x 120 days <br> Free Promo Coupon: 3 <br>Free Raffle Ticket: 2</p>
                         </div>
                         <div class="card-footer">
                             <button class="btn btn-primary btn-block">Select</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-header">
-                            <img class="img-thumbmail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcI9oHx3sdbQBO61LQcggwWHzW7aZWWFmifg&usqp=CAU" alt="">
+                            <img class="img-thumbmail" width="100%" src="../logo/logo.png" alt="">
                         </div>
                         <div class="card-body">
-                            <h5>Package 2</h5>
+                            <h5>Silver Package</h5>
                             <!-- <label for="">Price:  &#8369; 800.00</label> -->
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p>3 clicks / 24 videos <br> Airdrop: 400 <br> Phx rewards: 30 Phx per Day x 120 days <br>  Free Promo Coupon: 6 <br>Free Raffle Ticket: 4</p>
                         </div>
                         <div class="card-footer">
                             <button class="btn btn-primary btn-block">Select</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-header">
-                            <img class="img-thumbmail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvddyFi9n-a3EnNVaqD42l8U6-GOeAQ4gj-8Xi8rUG5hWto_CvTGNZqNYj753GY8AtJ7s&usqp=CAU" alt="">
+                            <img class="img-thumbmail" width="100%" src="../logo/logo.png" alt="">
                         </div>
                         <div class="card-body">
-                            <h5>Package 3</h5>
+                            <h5>Gold Package</h5>
                             <!-- <label for="">Price:  &#8369; 900.00</label> -->
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p>4 clicks / 32 videos<br> Airdrop: 600 <br>Phx rewards: 40 Phx per Day x 120 days<br> Free Promo Coupon: 9 <br>Free Raffle Ticket: 6</p>
                         </div>
                         <div class="card-footer">
                             <button class="btn btn-primary btn-block">Select</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-header">
-                            <img class="img-thumbmail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvddyFi9n-a3EnNVaqD42l8U6-GOeAQ4gj-8Xi8rUG5hWto_CvTGNZqNYj753GY8AtJ7s&usqp=CAU" alt="">
+                            <img class="img-thumbmail" width="100%" src="../logo/logo.png" alt="">
                         </div>
                         <div class="card-body">
-                            <h5>Package 4</h5>
+                            <h5>Platinum Package</h5>
                             <!-- <label for="">Price:  &#8369; 900.00</label> -->
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p>4 clicks / 32 videos <br> Airdrop: 600<br> Phx rewards: 40 Phx per Day x 120 days <br>Free Promo Coupon: 9 <br>Free Raffle Ticket: 6</p>
                         </div>
                         <div class="card-footer">
                             <button class="btn btn-primary btn-block">Select</button>
-                        </div>
-                    </div>
-                </div>
+                            
             </div>
           </div>
         </div>
+        <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <img class="img-thumbmail" width="100%" src="../logo/logo.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5>VIP Package</h5>
+                            <!-- <label for="">Price:  &#8369; 900.00</label> -->
+                            <p>8$ ICO 1 clicks / 8 videos <br> Airdrop: 200,000 <br> Phx rewards: 100 Phx per Day x 120 days <br>Free Promo Coupon: 12<br> Free Raffle Ticket: 12</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary btn-block">Select</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+
+                </div>
         <!-- /.row -->
       </div>
       <!-- /.container-fluid -->
