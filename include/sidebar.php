@@ -206,7 +206,7 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-file-contract"></i>
               <p>
-              Reports
+              Transaction
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
