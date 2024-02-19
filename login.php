@@ -14,7 +14,9 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="back/dist/css/adminlte.min.css">
 </head>
-<body class="hold-transition login-page" style="background-image: url('login_bg.jpg');">
+<body class="hold-transition login-page" style="background-image: url('login_bg.jpg'); background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;">
 <div class="login-box">
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">
