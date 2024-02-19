@@ -76,7 +76,7 @@
                     <?php 
                       $id = $_SESSION['id'];
 
-                      $query = mysqli_query($connection, "SELECT * FROM conversion INNER JOIN member_task1 ON conversion.member_id=member_task1.member_id WHERE conversion.member_id = $id");
+                      $query = mysqli_query($connection, "SELECT * FROM conversion WHERE conversion.member_id = $id");
                       while($row = mysqli_fetch_array($query)){
                     ?>
                     <tr>
