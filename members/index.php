@@ -27,6 +27,8 @@
   <link rel="stylesheet" href="../back/plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="../back/plugins/summernote/summernote-bs4.min.css">
+
+  <link rel="stylesheet" href="../back/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
   
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -129,11 +131,11 @@
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3 id="time"></h3>
+                <h3 id="time">0.00</h3>
                 <p>Withdrawal</p>
               </div>
               <div class="icon">
-                <i class="fas fa-calendar"></i>
+                <i class="fas fa-wallet"></i>
               </div>
               <a href="#" class="small-box-footer">  <i class="fas fa-arrow-circle-right"></i></a>
             </div>
@@ -294,6 +296,7 @@
         </div>
       </div><!-- /.container-fluid -->
     </section>
+    
     <div class="modal fade" id="modal-default">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -361,6 +364,174 @@
    
    
     <!-- /.content -->
+  </div>
+  <div class="content-wrapper kanban">
+  
+  <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Coming Soon</h1>
+          </div><!-- /.col -->
+          
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+
+  <section class="content pb-3">
+      <div class="container-fluid h-100" id="your_div">
+       
+      <div class="card card-row card-secondary">
+          <div class="card-header">
+            <h3 class="card-title">
+              Coupon
+            </h3>
+          </div>
+          <div class="card-body" >
+            <div class="card card-light card-outline">
+              <div class="card-header">
+                <h5 class="card-title">Create Actions</h5>
+                <div class="card-tools">
+                  <a href="#" class="btn btn-tool btn-link">#7</a>
+                  <a href="#" class="btn btn-tool">
+                    <i class="fas fa-pen"></i>
+                  </a>
+                </div>
+
+              </div>
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus.
+                </p>
+              </div>
+            </div>
+            <div class="card card-light card-outline">
+              <div class="card-header">
+                <h5 class="card-title">Create Actions</h5>
+                <div class="card-tools">
+                  <a href="#" class="btn btn-tool btn-link">#7</a>
+                  <a href="#" class="btn btn-tool">
+                    <i class="fas fa-pen"></i>
+                  </a>
+                </div>
+
+              </div>
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-row card-primary">
+          <div class="card-header">
+            <h3 class="card-title">
+              Bulletin
+            </h3>
+          </div>
+          <div class="card-body" >
+            <div class="card card-light card-outline">
+              <div class="card-header">
+                <h5 class="card-title">Create Actions</h5>
+                <div class="card-tools">
+                  <a href="#" class="btn btn-tool btn-link">#7</a>
+                  <a href="#" class="btn btn-tool">
+                    <i class="fas fa-pen"></i>
+                  </a>
+                </div>
+
+              </div>
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus.
+                </p>
+              </div>
+            </div>
+            <div class="card card-light card-outline">
+              <div class="card-header">
+                <h5 class="card-title">Create Actions</h5>
+                <div class="card-tools">
+                  <a href="#" class="btn btn-tool btn-link">#7</a>
+                  <a href="#" class="btn btn-tool">
+                    <i class="fas fa-pen"></i>
+                  </a>
+                </div>
+
+              </div>
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-row card-success">
+          <div class="card-header">
+            <h3 class="card-title">
+              Promo
+            </h3>
+          </div>
+          <div class="card-body" >
+            <div class="card card-light card-outline">
+              <div class="card-header">
+                <h5 class="card-title">Create Actions</h5>
+                <div class="card-tools">
+                  <a href="#" class="btn btn-tool btn-link">#7</a>
+                  <a href="#" class="btn btn-tool">
+                    <i class="fas fa-pen"></i>
+                  </a>
+                </div>
+
+              </div>
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus.
+                </p>
+              </div>
+            </div>
+            <div class="card card-light card-outline">
+              <div class="card-header">
+                <h5 class="card-title">Create Actions</h5>
+                <div class="card-tools">
+                  <a href="#" class="btn btn-tool btn-link">#7</a>
+                  <a href="#" class="btn btn-tool">
+                    <i class="fas fa-pen"></i>
+                  </a>
+                </div>
+
+              </div>
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes,
+                  nascetur ridiculus mus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+       
+      </div>
+    </section>
   </div>
   <?php
 
@@ -443,6 +614,9 @@
 
 <!-- jQuery -->
 <script>
+
+var objDiv = document.getElementById("your_div");
+objDiv.scrollTop = objDiv.scrollHeight;
   
   function myFunction() {
     var x = document.getElementById("myVideo").ended;
@@ -465,7 +639,7 @@
     let Difference_In_Time = countDownDate - now;
     let Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24) - 1;
 
-    document.getElementById("time").innerHTML = Difference_In_Days + " d ";
+    // document.getElementById("time").innerHTML = Difference_In_Days + " d ";
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -493,6 +667,7 @@
       }
     }, 1000);
   </script>
+<script src="../back/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <script src="../back/plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="../back/plugins/jquery-ui/jquery-ui.min.js"></script>
@@ -507,10 +682,7 @@
 <!-- Sparkline -->
 <script src="../back/plugins/sparklines/sparkline.js"></script>
 <!-- JQVMap -->
-<script src="../back/plugins/jqvmap/jquery.vmap.min.js"></script>
-<script src="../back/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
 <!-- jQuery Knob Chart -->
-<script src="../back/plugins/jquery-knob/jquery.knob.min.js"></script>
 <!-- daterangepicker -->
 <script src="../back/plugins/moment/moment.min.js"></script>
 <script src="../back/plugins/daterangepicker/daterangepicker.js"></script>
