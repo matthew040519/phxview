@@ -241,7 +241,7 @@
                       Rewards: <?php echo number_format($row_task['rate'], 2); ?> PHXCOIN
                     </div>
                     <div class="card-body">
-                      <video height="200px" width="100%" controls id="myVideo">
+                      <video height="400px" width="100%" controls id="myVideo">
                         <source src="../storage/video/<?php echo $row_task['url']; ?>" type="video/mp4"></source>
                       </video>
                     </div>
@@ -272,7 +272,7 @@
                 </div>
                 <div class="card-body">
                 <!-- style="pointer-events: none;" -->
-                  <video height="200px" width="100%" controls  id="myVideo">
+                  <video height="400px" width="100%" controls  id="myVideo">
                     <source src="../storage/video/<?php echo $row_task['url']; ?>" type="video/mp4"></source>
                   </video>
                 </div>
@@ -361,178 +361,208 @@
         <!-- /.modal-dialog -->
       </div>
    
-   
+      <section class="content">
+        <div class="container-fluid">
+            <div class="card">
+                <div class="card-header" style="text-align: center;">
+                  <h1>Coming Soon..</h1>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                      <div class="col-lg-3">
+                      <!-- small box -->
+                        <div class="small-box bg-danger">
+                          <div class="inner">
+                            <h3 id="time">0.00</h3>
+                            <p>Withdrawal</p>
+                          </div>
+                          <div class="icon">
+                            <i class="fas fa-wallet"></i>
+                          </div>
+                          <a href="#" class="small-box-footer">  <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                      <!-- small box -->
+                        <div class="small-box bg-danger">
+                          <div class="inner">
+                            <h3 id="time">0.00</h3>
+                            <p>Withdrawal</p>
+                          </div>
+                          <div class="icon">
+                            <i class="fas fa-wallet"></i>
+                          </div>
+                          <a href="#" class="small-box-footer">  <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                      <!-- small box -->
+                        <div class="small-box bg-danger">
+                          <div class="inner">
+                            <h3 id="time">0.00</h3>
+                            <p>Withdrawal</p>
+                          </div>
+                          <div class="icon">
+                            <i class="fas fa-wallet"></i>
+                          </div>
+                          <a href="#" class="small-box-footer">  <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                      <!-- small box -->
+                        <div class="small-box bg-danger">
+                          <div class="inner">
+                            <h3 id="time">0.00</h3>
+                            <p>Withdrawal</p>
+                          </div>
+                          <div class="icon">
+                            <i class="fas fa-wallet"></i>
+                          </div>
+                          <a href="#" class="small-box-footer">  <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                      <!-- small box -->
+                        <div class="small-box bg-danger">
+                          <div class="inner">
+                            <h3 id="time">0.00</h3>
+                            <p>Withdrawal</p>
+                          </div>
+                          <div class="icon">
+                            <i class="fas fa-wallet"></i>
+                          </div>
+                          <a href="#" class="small-box-footer">  <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                      <!-- small box -->
+                        <div class="small-box bg-danger">
+                          <div class="inner">
+                            <h3 id="time">0.00</h3>
+                            <p>Withdrawal</p>
+                          </div>
+                          <div class="icon">
+                            <i class="fas fa-wallet"></i>
+                          </div>
+                          <a href="#" class="small-box-footer">  <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                      <!-- small box -->
+                        <div class="small-box bg-danger">
+                          <div class="inner">
+                            <h3 id="time">0.00</h3>
+                            <p>Withdrawal</p>
+                          </div>
+                          <div class="icon">
+                            <i class="fas fa-wallet"></i>
+                          </div>
+                          <a href="#" class="small-box-footer">  <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                      <!-- small box -->
+                        <div class="small-box bg-danger">
+                          <div class="inner">
+                            <h3 id="time">0.00</h3>
+                            <p>Withdrawal</p>
+                          </div>
+                          <div class="icon">
+                            <i class="fas fa-wallet"></i>
+                          </div>
+                          <a href="#" class="small-box-footer">  <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+            
+        </div>
+</section>
    
     <!-- /.content -->
   </div>
+
   <div class="content-wrapper kanban">
+                        
+                          <section class="content pb-3">
+                            <div class="container-fluid h-100">
+                              <div class="card card-row card-primary"  style="width: 82%">
+                                <div class="card-header">
+                                  <h3 class="card-title">
+                                    Bulletin
+                                  </h3>
+                                </div>
+                                <div class="card-body" >
+                                  <div class="card card-light card-outline">
+                                    <div class="card-header">
+                                      <h5 class="card-title">Create Actions</h5>
+                                      <div class="card-tools">
+                                        <a href="#" class="btn btn-tool btn-link">#7</a>
+                                        <a href="#" class="btn btn-tool">
+                                          <i class="fas fa-pen"></i>
+                                        </a>
+                                      </div>
+
+                                    </div>
+                                    <div class="card-body">
+                                      <p>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                        Aenean commodo ligula eget dolor. Aenean massa.
+                                        Cum sociis natoque penatibus et magnis dis parturient montes,
+                                        nascetur ridiculus mus.
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div class="card card-light card-outline">
+                                    <div class="card-header">
+                                      <h5 class="card-title">Create Actions</h5>
+                                      <div class="card-tools">
+                                        <a href="#" class="btn btn-tool btn-link">#7</a>
+                                        <a href="#" class="btn btn-tool">
+                                          <i class="fas fa-pen"></i>
+                                        </a>
+                                      </div>
+
+                                    </div>
+                                    <div class="card-body">
+                                      <p>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                        Aenean commodo ligula eget dolor. Aenean massa.
+                                        Cum sociis natoque penatibus et magnis dis parturient montes,
+                                        nascetur ridiculus mus.
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div class="card card-light card-outline">
+                                    <div class="card-header">
+                                      <h5 class="card-title">Create Actions</h5>
+                                      <div class="card-tools">
+                                        <a href="#" class="btn btn-tool btn-link">#7</a>
+                                        <a href="#" class="btn btn-tool">
+                                          <i class="fas fa-pen"></i>
+                                        </a>
+                                      </div>
+
+                                    </div>
+                                    <div class="card-body">
+                                      <p>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                        Aenean commodo ligula eget dolor. Aenean massa.
+                                        Cum sociis natoque penatibus et magnis dis parturient montes,
+                                        nascetur ridiculus mus.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </section>
+                        </div>
   
-  <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0">Coming Soon</h1>
-          </div><!-- /.col -->
-          
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-
-  <section class="content pb-3">
-      <div class="container-fluid h-100" id="your_div">
-       
-      <div class="card card-row card-secondary">
-          <div class="card-header">
-            <h3 class="card-title">
-              Coupon
-            </h3>
-          </div>
-          <div class="card-body" >
-            <div class="card card-light card-outline">
-              <div class="card-header">
-                <h5 class="card-title">Create Actions</h5>
-                <div class="card-tools">
-                  <a href="#" class="btn btn-tool btn-link">#7</a>
-                  <a href="#" class="btn btn-tool">
-                    <i class="fas fa-pen"></i>
-                  </a>
-                </div>
-
-              </div>
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Aenean commodo ligula eget dolor. Aenean massa.
-                  Cum sociis natoque penatibus et magnis dis parturient montes,
-                  nascetur ridiculus mus.
-                </p>
-              </div>
-            </div>
-            <div class="card card-light card-outline">
-              <div class="card-header">
-                <h5 class="card-title">Create Actions</h5>
-                <div class="card-tools">
-                  <a href="#" class="btn btn-tool btn-link">#7</a>
-                  <a href="#" class="btn btn-tool">
-                    <i class="fas fa-pen"></i>
-                  </a>
-                </div>
-
-              </div>
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Aenean commodo ligula eget dolor. Aenean massa.
-                  Cum sociis natoque penatibus et magnis dis parturient montes,
-                  nascetur ridiculus mus.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card card-row card-primary">
-          <div class="card-header">
-            <h3 class="card-title">
-              Bulletin
-            </h3>
-          </div>
-          <div class="card-body" >
-            <div class="card card-light card-outline">
-              <div class="card-header">
-                <h5 class="card-title">Create Actions</h5>
-                <div class="card-tools">
-                  <a href="#" class="btn btn-tool btn-link">#7</a>
-                  <a href="#" class="btn btn-tool">
-                    <i class="fas fa-pen"></i>
-                  </a>
-                </div>
-
-              </div>
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Aenean commodo ligula eget dolor. Aenean massa.
-                  Cum sociis natoque penatibus et magnis dis parturient montes,
-                  nascetur ridiculus mus.
-                </p>
-              </div>
-            </div>
-            <div class="card card-light card-outline">
-              <div class="card-header">
-                <h5 class="card-title">Create Actions</h5>
-                <div class="card-tools">
-                  <a href="#" class="btn btn-tool btn-link">#7</a>
-                  <a href="#" class="btn btn-tool">
-                    <i class="fas fa-pen"></i>
-                  </a>
-                </div>
-
-              </div>
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Aenean commodo ligula eget dolor. Aenean massa.
-                  Cum sociis natoque penatibus et magnis dis parturient montes,
-                  nascetur ridiculus mus.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card card-row card-success">
-          <div class="card-header">
-            <h3 class="card-title">
-              Promo
-            </h3>
-          </div>
-          <div class="card-body" >
-            <div class="card card-light card-outline">
-              <div class="card-header">
-                <h5 class="card-title">Create Actions</h5>
-                <div class="card-tools">
-                  <a href="#" class="btn btn-tool btn-link">#7</a>
-                  <a href="#" class="btn btn-tool">
-                    <i class="fas fa-pen"></i>
-                  </a>
-                </div>
-
-              </div>
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Aenean commodo ligula eget dolor. Aenean massa.
-                  Cum sociis natoque penatibus et magnis dis parturient montes,
-                  nascetur ridiculus mus.
-                </p>
-              </div>
-            </div>
-            <div class="card card-light card-outline">
-              <div class="card-header">
-                <h5 class="card-title">Create Actions</h5>
-                <div class="card-tools">
-                  <a href="#" class="btn btn-tool btn-link">#7</a>
-                  <a href="#" class="btn btn-tool">
-                    <i class="fas fa-pen"></i>
-                  </a>
-                </div>
-
-              </div>
-              <div class="card-body">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Aenean commodo ligula eget dolor. Aenean massa.
-                  Cum sociis natoque penatibus et magnis dis parturient montes,
-                  nascetur ridiculus mus.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-       
-      </div>
-    </section>
-  </div>
+  
+ 
+ 
   <?php
 
     if(isset($_POST['transfer']))
