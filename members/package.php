@@ -68,7 +68,7 @@
           </div>
           <div class="col-md-12">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="card" style="background-color: #CD7F32; color: white">
                         <div class="card-header">
                             <img class="img-thumbmail" width="100%" src="../logo/package.png" alt="">
@@ -83,7 +83,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="card" style="background-color: #C0C0C0;">
                         <div class="card-header">
                             <img class="img-thumbmail" width="100%" src="../logo/package.png" alt="">
@@ -98,7 +98,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="card" style="background-color: #FFD700;">
                         <div class="card-header">
                             <img class="img-thumbmail" width="100%" src="../logo/package.png" alt="">
@@ -113,10 +113,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2">
-
-                </div>
-                <div class="col-md-4">
+               
+                <div class="col-md-3">
                     <div class="card" style="background-color: #E5E4E2;">
                         <div class="card-header">
                             <img class="img-thumbmail" width="100%" src="../logo/package.png" alt="">
@@ -132,24 +130,67 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
                     <div class="card" style="background-color: rgb(<?php echo rand(0,255); ?>, <?php echo rand(0,255); ?>, <?php echo rand(0,255); ?>);">
                         <div class="card-header">
                             <img class="img-thumbmail" width="100%" src="../logo/package.png" alt="">
                         </div>
                         <div class="card-body">
-                            <h5>VIP Package</h5>
+                            <h5>Coming Soon</h5>
                             <!-- <label for="">Price:  &#8369; 900.00</label> -->
-                            <p>8$ ICO 1 clicks / 8 videos <br> Airdrop: 200,000 <br> Phx rewards: 100 Phx per Day x 120 days <br>Free Promo Coupon: 12<br> Free Raffle Ticket: 12</p>
+                            <!-- <p>8$ ICO 1 clicks / 8 videos <br> Airdrop: 200,000 <br> Phx rewards: 100 Phx per Day x 120 days <br>Free Promo Coupon: 12<br> Free Raffle Ticket: 12</p> -->
                         </div>
                         <div class="card-footer">
                             <button class="btn btn-primary btn-block">Select</button> 
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2">
-
+                <div class="col-md-3">
+                    <div class="card" style="background-color: rgb(<?php echo rand(0,255); ?>, <?php echo rand(0,255); ?>, <?php echo rand(0,255); ?>);">
+                        <div class="card-header">
+                            <img class="img-thumbmail" width="100%" src="../logo/package.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5>Coming Soon</h5>
+                            <!-- <label for="">Price:  &#8369; 900.00</label> -->
+                            <!-- <p>8$ ICO 1 clicks / 8 videos <br> Airdrop: 200,000 <br> Phx rewards: 100 Phx per Day x 120 days <br>Free Promo Coupon: 12<br> Free Raffle Ticket: 12</p> -->
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary btn-block">Select</button> 
+                        </div>
+                    </div>
                 </div>
+                <div class="col-md-3">
+                    <div class="card" style="background-color: rgb(<?php echo rand(0,255); ?>, <?php echo rand(0,255); ?>, <?php echo rand(0,255); ?>);">
+                        <div class="card-header">
+                            <img class="img-thumbmail" width="100%" src="../logo/package.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5>Coming Soon</h5>
+                            <!-- <label for="">Price:  &#8369; 900.00</label> -->
+                            <!-- <p>8$ ICO 1 clicks / 8 videos <br> Airdrop: 200,000 <br> Phx rewards: 100 Phx per Day x 120 days <br>Free Promo Coupon: 12<br> Free Raffle Ticket: 12</p> -->
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary btn-block">Select</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="background-color: rgb(<?php echo rand(0,255); ?>, <?php echo rand(0,255); ?>, <?php echo rand(0,255); ?>);">
+                        <div class="card-header">
+                            <img class="img-thumbmail" width="100%" src="../logo/package.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5>Coming Soon</h5>
+                            <!-- <label for="">Price:  &#8369; 900.00</label> -->
+                            <!-- <p>8$ ICO 1 clicks / 8 videos <br> Airdrop: 200,000 <br> Phx rewards: 100 Phx per Day x 120 days <br>Free Promo Coupon: 12<br> Free Raffle Ticket: 12</p> -->
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary btn-block">Select</button> 
+                        </div>
+                    </div>
+                </div>
+                
         <!-- /.row -->
       </div>
       <!-- /.container-fluid -->

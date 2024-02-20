@@ -463,7 +463,7 @@
     console.log(countDownDate);
     console.log(now);
     let Difference_In_Time = countDownDate - now;
-    let Difference_In_Days = Math.round(Difference_In_Time / (1000 * 3600 * 24) - 1);
+    let Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24) - 1;
 
     document.getElementById("time").innerHTML = Difference_In_Days + " d ";
 
