@@ -121,20 +121,21 @@
             </a>
           </li>
           <?php } else if($_SESSION['role'] == 0) { ?>
-          <li class="nav-item">
-            <a href="announcement.php" class="nav-link">
-              <i class="nav-icon fas fa-bullhorn"></i>
-              <p>
-                Announcement
-                <!-- <span class="right badge badge-danger">New</span> -->
-              </p>
-            </a>
-          </li>
+          
           <li class="nav-item">
           <a href="package.php" class="nav-link">
               <i class="nav-icon fas fa-database"></i>
               <p>
                 Package
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="profile.php" class="nav-link">
+              <i class="nav-icon fas fa-user"></i>
+              <p>
+                Profile
+                <!-- <span class="right badge badge-danger">New</span> -->
               </p>
             </a>
           </li>
@@ -147,57 +148,10 @@
             </a>
           </li>
           <li class="nav-item">
-          <a href="market.php" class="nav-link">
-              <i class="nav-icon fas fa-shopping-cart"></i>
-              <p>
-                Market
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-table"></i>
-              <p>
-                Task
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pendingtask.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Pending Task</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="expiretask.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Expire Task</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="donetask.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Done Task</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
             <a href="withdraw.php" class="nav-link">
               <i class="nav-icon fas fa-credit-card"></i>
               <p>
                 Withdraw
-                <!-- <span class="right badge badge-danger">New</span> -->
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="profile.php" class="nav-link">
-              <i class="nav-icon fas fa-user"></i>
-              <p>
-                Profile
                 <!-- <span class="right badge badge-danger">New</span> -->
               </p>
             </a>
@@ -231,7 +185,57 @@
                 </a>
               </li>
             </ul>
+          </li>  
+          <li class="nav-item">
+          <a href="market.php" class="nav-link">
+              <i class="nav-icon fas fa-shopping-cart"></i>
+              <p>
+                Market
+              </p>
+            </a>
           </li>
+          
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                Task
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pendingtask.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Pending Task</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="expiretask.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Expire Task</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="donetask.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Done Task</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="announcement.php" class="nav-link">
+              <i class="nav-icon fas fa-bullhorn"></i>
+              <p>
+                Announcement
+                <!-- <span class="right badge badge-danger">New</span> -->
+              </p>
+            </a>
+          </li>
+          
+          
+          
           <?php } else { ?>
             
           <li class="nav-item">

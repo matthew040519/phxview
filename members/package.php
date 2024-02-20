@@ -69,7 +69,7 @@
           <div class="col-md-12">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card" style="background-color: #CD7F32; color: white">
                         <div class="card-header">
                             <img class="img-thumbmail" width="100%" src="../logo/package.png" alt="">
                         </div>
@@ -84,7 +84,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card" style="background-color: #C0C0C0;">
                         <div class="card-header">
                             <img class="img-thumbmail" width="100%" src="../logo/package.png" alt="">
                         </div>
@@ -99,7 +99,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card" style="background-color: #FFD700;">
                         <div class="card-header">
                             <img class="img-thumbmail" width="100%" src="../logo/package.png" alt="">
                         </div>
@@ -117,7 +117,7 @@
 
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card" style="background-color: #E5E4E2;">
                         <div class="card-header">
                             <img class="img-thumbmail" width="100%" src="../logo/package.png" alt="">
                         </div>
@@ -133,7 +133,7 @@
           </div>
         </div>
         <div class="col-md-4">
-                    <div class="card">
+                    <div class="card" style="background-color: rgb(<?php echo rand(0,255); ?>, <?php echo rand(0,255); ?>, <?php echo rand(0,255); ?>);">
                         <div class="card-header">
                             <img class="img-thumbmail" width="100%" src="../logo/package.png" alt="">
                         </div>

@@ -69,7 +69,7 @@
         
         <!-- Small boxes (Stat box) -->
         <div class="row">
-          <div class="col-lg-3 col-6">
+          <div class="col-lg-3 col-6" >
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
@@ -116,7 +116,7 @@
               <div class="inner">
                 <h3>0.00</h3>
 
-                <p>Withdrawal</p>
+                <p>E-Wallet</p>
               </div>
               <div class="icon">
                 <i class="fas fa-wallet"></i>
@@ -130,7 +130,7 @@
             <div class="small-box bg-danger">
               <div class="inner">
                 <h3 id="time"></h3>
-                <p>Days Remaining</p>
+                <p>Withdrawal</p>
               </div>
               <div class="icon">
                 <i class="fas fa-calendar"></i>
@@ -168,6 +168,22 @@
           <!-- ./col -->
           <div class="col-lg-3 col-6">
             <!-- small box -->
+            <div class="small-box bg-warning">
+              <div class="inner">
+                <h3>0</h3>
+
+                <p>Direct Sponsor</p>
+              </div>
+              <div class="icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <a href="#" class="small-box-footer"> <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
                 <h3>0</h3>
@@ -195,21 +211,7 @@
               <a href="#" class="small-box-footer"> <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-danger">
-              <div class="inner">
-                <h3>0</h3>
-
-                <p>E-market</p>
-              </div>
-              <div class="icon">
-                <i class="fas fa-shopping-cart"></i>
-              </div>
-              <a href="#" class="small-box-footer"> <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
+          
           
         </div>
         <div class="row">
@@ -237,7 +239,7 @@
                       Rewards: <?php echo number_format($row_task['rate'], 2); ?> PHXCOIN
                     </div>
                     <div class="card-body">
-                      <video height="300px" width="100%" controls id="myVideo">
+                      <video height="200px" width="100%" controls id="myVideo">
                         <source src="../storage/video/<?php echo $row_task['url']; ?>" type="video/mp4"></source>
                       </video>
                     </div>
@@ -268,7 +270,7 @@
                 </div>
                 <div class="card-body">
                 <!-- style="pointer-events: none;" -->
-                  <video height="300px" width="100%" controls  id="myVideo">
+                  <video height="200px" width="100%" controls  id="myVideo">
                     <source src="../storage/video/<?php echo $row_task['url']; ?>" type="video/mp4"></source>
                   </video>
                 </div>
@@ -310,14 +312,14 @@
                     </div>
                     <div class="col-md-12">
                         <label for="">PhxCoin</label>
-                        <input type="number" name="phxcoin" class="form-control">
+                        <input type="number" required name="phxcoin" class="form-control">
                     </div>
                 </div>
               
             </div>
             <div class="modal-footer justify-content-between">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="submit" name="save" class="btn btn-primary">Save changes</button>
+              <button type="submit" name="save" class="btn btn-primary">Confirm</button>
             </div>
             </form>
           </div>
@@ -340,14 +342,14 @@
                 <div class="row">
                     <div class="col-md-12">
                         <label for="">Wallet</label>
-                        <input type="number" name="wallet" class="form-control">
+                        <input type="number" required name="wallet" class="form-control">
                     </div>
                 </div>
               
             </div>
             <div class="modal-footer justify-content-between">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="submit" name="transfer" class="btn btn-primary">Save changes</button>
+              <button type="submit" name="transfer" class="btn btn-primary">Confirm</button>
             </div>
             </form>
           </div>
@@ -452,14 +454,19 @@
     }
   }
 </script>
-<?php $date1 = date_create($_SESSION['date_join']); ?>
+
 <script>
 
-    // function everySeconds(date)
-    // {
-    //     return <?php ?>
-    // }
-    var countDownDate = new Date("<?php $date = date_create($_SESSION['date_join']); date_add($date,date_interval_create_from_date_string("120 days")); echo date_format($date, 'F j, Y H:i:s');?>").getTime();
+   
+    var countDownDate = new Date("<?php $date = date_create($_SESSION['date_join']); date_add($date,date_interval_create_from_date_string("120 days")); echo date_format($date, 'F j, Y');?>").getTime();
+    var now = new Date("<?php $date1 = date_create($_SESSION['date_join']); echo date_format($date1, 'F j, Y');?>").getTime();
+    console.log(countDownDate);
+    console.log(now);
+    let Difference_In_Time = countDownDate - now;
+    let Difference_In_Days = Math.round(Difference_In_Time / (1000 * 3600 * 24) - 1);
+
+    document.getElementById("time").innerHTML = Difference_In_Days + " d ";
+
     // Update the count down every 1 second
     var x = setInterval(function() {
 
@@ -477,7 +484,7 @@
       // Display the result in the element with id="demo"
       // document.getElementById("time").innerHTML = days + "d " + hours + "h "
       // + minutes + "m " + seconds + "s ";
-      document.getElementById("time").innerHTML = days + "d ";
+      // document.getElementById("time").innerHTML = days + "d ";
 
       // If the count down is finished, write some text
       if (distance < 0) {
