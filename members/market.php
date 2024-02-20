@@ -76,7 +76,7 @@
                         <div class="card-body">
                             <h5>Product 1</h5>
                             <label for="">Price:  &#8369; 500.00</label>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p></p>
                         </div>
                         <div class="card-footer">
                             <button class="btn btn-primary btn-block">Buy</button>
@@ -91,7 +91,7 @@
                         <div class="card-body">
                             <h5>Product 2</h5>
                             <label for="">Price:  &#8369; 800.00</label>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p></p>
                         </div>
                         <div class="card-footer">
                             <button class="btn btn-primary btn-block">Buy</button>
@@ -106,12 +106,13 @@
                         <div class="card-body">
                             <h5>Product 3</h5>
                             <label for="">Price:  &#8369; 900.00</label>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p></p>
                         </div>
                         <div class="card-footer">
                             <button class="btn btn-primary btn-block">Buy</button>
                         </div>
                     </div>
+                    
                 </div>
             </div>
           </div>

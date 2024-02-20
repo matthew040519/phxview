@@ -69,14 +69,14 @@
           <div class="col-md-12">
             <div class="row">
                 <div class="col-md-3">
-                    <div class="card" style="background-color: #CD7F32; color: white">
+                    <div class="card" >
                         <div class="card-header">
                             <img class="img-thumbmail" width="100%" src="../logo/package.png" alt="">
                         </div>
-                        <div class="card-body">
-                            <h5>Bronze Package</h5>
+                        <div class="card-body" style="background-color: #CD7F32">
+                            <h5 style="font-weight: bold;">Bronze Package</h5>
                             <!-- <label for="">Price:  &#8369; 500.00</label> -->
-                            <p>2 clicks / 16 videos <br> Airdrop: 200 <br> Phxrewards: 20 Phx per Day x 120 days <br> Free Promo Coupon: 3 <br>Free Raffle Ticket: 2</p>
+                            <p>2 clicks / 16 videos <br> Airdrop: 200 <br> Phx rewards: 2400 Phx for 120 days <br> Free Promo Coupon: 3 <br>Free Raffle Ticket: 2</p>
                         </div>
                         <div class="card-footer">
                             <button class="btn btn-primary btn-block">Select</button>
@@ -84,14 +84,14 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card" style="background-color: #C0C0C0;">
+                    <div class="card" >
                         <div class="card-header">
                             <img class="img-thumbmail" width="100%" src="../logo/package.png" alt="">
                         </div>
-                        <div class="card-body">
-                            <h5>Silver Package</h5>
+                        <div class="card-body" style="background-color: #C0C0C0;">
+                            <h5 style="font-weight: bold;">Silver Package</h5>
                             <!-- <label for="">Price:  &#8369; 800.00</label> -->
-                            <p>3 clicks / 24 videos <br> Airdrop: 400 <br> Phx rewards: 30 Phx per Day x 120 days <br>  Free Promo Coupon: 6 <br>Free Raffle Ticket: 4</p>
+                            <p>3 clicks / 24 videos <br> Airdrop: 400 <br> Phx rewards: 3600 Phx for 120 days <br>  Free Promo Coupon: 6 <br>Free Raffle Ticket: 4</p>
                         </div>
                         <div class="card-footer">
                             <button class="btn btn-primary btn-block">Select</button>
@@ -99,14 +99,14 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card" style="background-color: #FFD700;">
+                    <div class="card" >
                         <div class="card-header">
                             <img class="img-thumbmail" width="100%" src="../logo/package.png" alt="">
                         </div>
-                        <div class="card-body">
-                            <h5>Gold Package</h5>
+                        <div class="card-body"style="background-color: #FFD700;">
+                            <h5 style="font-weight: bold;">Gold Package</h5>
                             <!-- <label for="">Price:  &#8369; 900.00</label> -->
-                            <p>4 clicks / 32 videos<br> Airdrop: 600 <br>Phx rewards: 40 Phx per Day x 120 days<br> Free Promo Coupon: 9 <br>Free Raffle Ticket: 6</p>
+                            <p>4 clicks / 32 videos<br> Airdrop: 600 <br>Phx rewards: 4800 Phx for 120 days<br> Free Promo Coupon: 9 <br>Free Raffle Ticket: 6</p>
                         </div>
                         <div class="card-footer">
                             <button class="btn btn-primary btn-block">Select</button>
@@ -115,14 +115,14 @@
                 </div>
                
                 <div class="col-md-3">
-                    <div class="card" style="background-color: #E5E4E2;">
+                    <div class="card" >
                         <div class="card-header">
                             <img class="img-thumbmail" width="100%" src="../logo/package.png" alt="">
                         </div>
-                        <div class="card-body">
-                            <h5>Platinum Package</h5>
+                        <div class="card-body" style="background-color: #E5E4E2;">
+                            <h5 style="font-weight: bold;">Platinum Package</h5>
                             <!-- <label for="">Price:  &#8369; 900.00</label> -->
-                            <p>5 clicks / 16 videos <br> Airdrop: 800<br> Phx rewards: 50 Phx per Day x 120 days <br>Free Promo Coupon: 12 <br>Free Raffle Ticket: 8</p>
+                            <p>5 clicks / 16 videos <br> Airdrop: 800<br> Phx rewards: 6000 Phx for 120 days <br>Free Promo Coupon: 12 <br>Free Raffle Ticket: 8</p>
                         </div>
                         <div class="card-footer">
                             <button class="btn btn-primary btn-block">Select</button>
@@ -131,11 +131,12 @@
           </div>
         </div>
         <div class="col-md-3">
-                    <div class="card" style="background-color: rgb(<?php echo rand(0,255); ?>, <?php echo rand(0,255); ?>, <?php echo rand(0,255); ?>);">
+                    <div class="card" >
                         <div class="card-header">
                             <img class="img-thumbmail" width="100%" src="../logo/package.png" alt="">
                         </div>
-                        <div class="card-body">
+                        <div class="card-body" style="background-color: rgb(<?php echo rand(0,255); ?>, <?php echo rand(0,255); ?>, <?php echo rand(0,255); ?>);">
+                            <h5 style="font-weight: bold;">VIP1</h5>
                             <h5>Coming Soon</h5>
                             <!-- <label for="">Price:  &#8369; 900.00</label> -->
                             <!-- <p>8$ ICO 1 clicks / 8 videos <br> Airdrop: 200,000 <br> Phx rewards: 100 Phx per Day x 120 days <br>Free Promo Coupon: 12<br> Free Raffle Ticket: 12</p> -->
@@ -146,11 +147,12 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card" style="background-color: rgb(<?php echo rand(0,255); ?>, <?php echo rand(0,255); ?>, <?php echo rand(0,255); ?>);">
+                    <div class="card" >
                         <div class="card-header">
                             <img class="img-thumbmail" width="100%" src="../logo/package.png" alt="">
                         </div>
-                        <div class="card-body">
+                        <div class="card-body" style="background-color: rgb(<?php echo rand(0,255); ?>, <?php echo rand(0,255); ?>, <?php echo rand(0,255); ?>);">
+                            <h5 style="font-weight: bold;">VIP2</h5>
                             <h5>Coming Soon</h5>
                             <!-- <label for="">Price:  &#8369; 900.00</label> -->
                             <!-- <p>8$ ICO 1 clicks / 8 videos <br> Airdrop: 200,000 <br> Phx rewards: 100 Phx per Day x 120 days <br>Free Promo Coupon: 12<br> Free Raffle Ticket: 12</p> -->
@@ -161,11 +163,12 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card" style="background-color: rgb(<?php echo rand(0,255); ?>, <?php echo rand(0,255); ?>, <?php echo rand(0,255); ?>);">
+                    <div class="card" >
                         <div class="card-header">
                             <img class="img-thumbmail" width="100%" src="../logo/package.png" alt="">
                         </div>
-                        <div class="card-body">
+                        <div class="card-body" style="background-color: rgb(<?php echo rand(0,255); ?>, <?php echo rand(0,255); ?>, <?php echo rand(0,255); ?>);">
+                            <h5 style="font-weight: bold;">VIP3</h5>
                             <h5>Coming Soon</h5>
                             <!-- <label for="">Price:  &#8369; 900.00</label> -->
                             <!-- <p>8$ ICO 1 clicks / 8 videos <br> Airdrop: 200,000 <br> Phx rewards: 100 Phx per Day x 120 days <br>Free Promo Coupon: 12<br> Free Raffle Ticket: 12</p> -->
@@ -176,11 +179,12 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card" style="background-color: rgb(<?php echo rand(0,255); ?>, <?php echo rand(0,255); ?>, <?php echo rand(0,255); ?>);">
+                    <div class="card" >
                         <div class="card-header">
                             <img class="img-thumbmail" width="100%" src="../logo/package.png" alt="">
                         </div>
-                        <div class="card-body">
+                        <div class="card-body" style="background-color: rgb(<?php echo rand(0,255); ?>, <?php echo rand(0,255); ?>, <?php echo rand(0,255); ?>);">
+                            <h5 style="font-weight: bold;">VIP4</h5>
                             <h5>Coming Soon</h5>
                             <!-- <label for="">Price:  &#8369; 900.00</label> -->
                             <!-- <p>8$ ICO 1 clicks / 8 videos <br> Airdrop: 200,000 <br> Phx rewards: 100 Phx per Day x 120 days <br>Free Promo Coupon: 12<br> Free Raffle Ticket: 12</p> -->
