@@ -114,7 +114,7 @@
           <!-- ./col -->
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-warning">
+            <div class="small-box bg-success">
               <div class="inner">
                 <h3>0.00</h3>
 
@@ -170,7 +170,7 @@
           <!-- ./col -->
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-warning">
+            <div class="small-box bg-secondary">
               <div class="inner">
                 <h3>0</h3>
 
@@ -201,7 +201,7 @@
           <!-- ./col -->
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-warning">
+            <div class="small-box bg-danger">
               <div class="inner">
                 <h3>0</h3>
 
@@ -371,104 +371,104 @@
                   <div class="row">
                       <div class="col-lg-3">
                       <!-- small box -->
-                        <div class="small-box bg-danger">
+                        <div class="small-box bg-info">
                           <div class="inner">
-                            <h3 id="time">0.00</h3>
-                            <p>Withdrawal</p>
+                            <h3 id="time">Free Coupon</h3>
+                            <p>Coming Soon..</p>
                           </div>
                           <div class="icon">
-                            <i class="fas fa-wallet"></i>
+                            <!-- <i class="fas fa-wallet"></i> -->
                           </div>
                           <a href="#" class="small-box-footer">  <i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                       </div>
                       <div class="col-lg-3">
                       <!-- small box -->
-                        <div class="small-box bg-danger">
+                      <div class="small-box bg-info">
                           <div class="inner">
-                            <h3 id="time">0.00</h3>
-                            <p>Withdrawal</p>
+                            <h3 id="time">Free Coupon</h3>
+                            <p>Coming Soon..</p>
                           </div>
                           <div class="icon">
-                            <i class="fas fa-wallet"></i>
+                            <!-- <i class="fas fa-wallet"></i> -->
                           </div>
                           <a href="#" class="small-box-footer">  <i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                       </div>
                       <div class="col-lg-3">
                       <!-- small box -->
-                        <div class="small-box bg-danger">
+                        <div class="small-box bg-success">
                           <div class="inner">
-                            <h3 id="time">0.00</h3>
-                            <p>Withdrawal</p>
+                            <h3 id="time">PROMO</h3>
+                            <p>Coming Soon..</p>
                           </div>
                           <div class="icon">
-                            <i class="fas fa-wallet"></i>
+                           <!-- <i class="fas fa-wallet"></i> -->
                           </div>
                           <a href="#" class="small-box-footer">  <i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                       </div>
                       <div class="col-lg-3">
                       <!-- small box -->
-                        <div class="small-box bg-danger">
+                      <div class="small-box bg-success">
                           <div class="inner">
-                            <h3 id="time">0.00</h3>
-                            <p>Withdrawal</p>
+                            <h3 id="time">PROMO</h3>
+                            <p>Coming Soon..</p>
                           </div>
                           <div class="icon">
-                            <i class="fas fa-wallet"></i>
+                           <!-- <i class="fas fa-wallet"></i> -->
                           </div>
                           <a href="#" class="small-box-footer">  <i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                       </div>
                       <div class="col-lg-3">
                       <!-- small box -->
-                        <div class="small-box bg-danger">
+                      <div class="small-box bg-info">
                           <div class="inner">
-                            <h3 id="time">0.00</h3>
-                            <p>Withdrawal</p>
+                            <h3 id="time">Free Coupon</h3>
+                            <p>Coming Soon..</p>
                           </div>
                           <div class="icon">
-                            <i class="fas fa-wallet"></i>
+                            <!-- <i class="fas fa-wallet"></i> -->
                           </div>
                           <a href="#" class="small-box-footer">  <i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                       </div>
                       <div class="col-lg-3">
                       <!-- small box -->
-                        <div class="small-box bg-danger">
+                      <div class="small-box bg-info">
                           <div class="inner">
-                            <h3 id="time">0.00</h3>
-                            <p>Withdrawal</p>
+                            <h3 id="time">Free Coupon</h3>
+                            <p>Coming Soon..</p>
                           </div>
                           <div class="icon">
-                            <i class="fas fa-wallet"></i>
+                            <!-- <i class="fas fa-wallet"></i> -->
                           </div>
                           <a href="#" class="small-box-footer">  <i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                       </div>
                       <div class="col-lg-3">
                       <!-- small box -->
-                        <div class="small-box bg-danger">
+                      <div class="small-box bg-success">
                           <div class="inner">
-                            <h3 id="time">0.00</h3>
-                            <p>Withdrawal</p>
+                            <h3 id="time">PROMO</h3>
+                            <p>Coming Soon..</p>
                           </div>
                           <div class="icon">
-                            <i class="fas fa-wallet"></i>
+                           <!-- <i class="fas fa-wallet"></i> -->
                           </div>
                           <a href="#" class="small-box-footer">  <i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                       </div>
                       <div class="col-lg-3">
                       <!-- small box -->
-                        <div class="small-box bg-danger">
+                      <div class="small-box bg-success">
                           <div class="inner">
-                            <h3 id="time">0.00</h3>
-                            <p>Withdrawal</p>
+                            <h3 id="time">PROMO</h3>
+                            <p>Coming Soon..</p>
                           </div>
                           <div class="icon">
-                            <i class="fas fa-wallet"></i>
+                           <!-- <i class="fas fa-wallet"></i> -->
                           </div>
                           <a href="#" class="small-box-footer">  <i class="fas fa-arrow-circle-right"></i></a>
                         </div>
@@ -496,7 +496,7 @@
                                 <div class="card-body" >
                                   <div class="card card-light card-outline">
                                     <div class="card-header">
-                                      <h5 class="card-title">Create Actions</h5>
+                                      <h5 class="card-title">Up Comming Events</h5>
                                       <div class="card-tools">
                                         <a href="#" class="btn btn-tool btn-link">#7</a>
                                         <a href="#" class="btn btn-tool">
@@ -507,16 +507,13 @@
                                     </div>
                                     <div class="card-body">
                                       <p>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                        Aenean commodo ligula eget dolor. Aenean massa.
-                                        Cum sociis natoque penatibus et magnis dis parturient montes,
-                                        nascetur ridiculus mus.
+                                      Coming Soon.............................................................................................................................................................................................................................................................................................................................
                                       </p>
                                     </div>
                                   </div>
                                   <div class="card card-light card-outline">
                                     <div class="card-header">
-                                      <h5 class="card-title">Create Actions</h5>
+                                      <h5 class="card-title">Up Coming Promos</h5>
                                       <div class="card-tools">
                                         <a href="#" class="btn btn-tool btn-link">#7</a>
                                         <a href="#" class="btn btn-tool">
@@ -527,16 +524,12 @@
                                     </div>
                                     <div class="card-body">
                                       <p>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                        Aenean commodo ligula eget dolor. Aenean massa.
-                                        Cum sociis natoque penatibus et magnis dis parturient montes,
-                                        nascetur ridiculus mus.
-                                      </p>
+                                      Coming Soon..
                                     </div>
                                   </div>
                                   <div class="card card-light card-outline">
                                     <div class="card-header">
-                                      <h5 class="card-title">Create Actions</h5>
+                                      <h5 class="card-title">Up Coming Coupons</h5>
                                       <div class="card-tools">
                                         <a href="#" class="btn btn-tool btn-link">#7</a>
                                         <a href="#" class="btn btn-tool">
@@ -547,11 +540,7 @@
                                     </div>
                                     <div class="card-body">
                                       <p>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                        Aenean commodo ligula eget dolor. Aenean massa.
-                                        Cum sociis natoque penatibus et magnis dis parturient montes,
-                                        nascetur ridiculus mus.
-                                      </p>
+                                      Coming Soon..
                                     </div>
                                   </div>
                                 </div>
