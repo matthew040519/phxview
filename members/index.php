@@ -69,6 +69,84 @@
     <section class="content">
       <div class="container-fluid">
         
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                <form method="POST">
+          <?php 
+            $id = $_SESSION['id'];
+            $query = mysqli_query($connection, "SELECT * FROM member_task1 WHERE member_id = $id ORDER BY id DESC LIMIT 1");
+            $check = mysqli_num_rows($query);
+            if($check > 0)
+            {
+                $row = mysqli_fetch_array($query);
+                $task_id = $row['task_id'] + 1;
+
+                $query_task = mysqli_query($connection, "SELECT * FROM task1 WHERE task_id = $task_id");
+                $check_task = mysqli_num_rows($query_task);
+                if($check_task > 0){
+                    $row_task = mysqli_fetch_array($query_task); ?>
+
+                    <input type="hidden" name="task_id" value="<?php echo $row_task['task_id']; ?>">
+                    <input type="hidden" name="rate" value="<?php echo $row_task['rate']; ?>">
+                    <div class="card-header" style="text-align: center;">
+                      <h3><?php echo $row_task['task_name']; ?></h3><br>
+                      Rewards: <?php echo number_format($row_task['rate'], 2); ?> PHXCOIN
+                    </div>
+                    <div class="card-body">
+                      <video height="400px" width="100%" controls id="myVideo">
+                        <source src="../storage/video/<?php echo $row_task['url']; ?>" type="video/mp4"></source>
+                      </video>
+                    </div>
+
+                    <div class="card-footer">
+                      <a class="btn btn-primary" onclick="myFunction()">Finish</a>
+                      <button class="btn btn-success" type="submit" name="claim" id="claim" style="display: none;">Claim your rewards</button>
+                    </div>
+
+           <?php } else {  ?>
+             <div class="card-body">
+                <div style="text-align: center;">
+                  <h1>No Task Available..</h1>
+                </div>
+             </div>
+          <?php } } 
+           else {
+            $query_task = mysqli_query($connection, "SELECT * FROM task1 LIMIT 1");
+                $row_task = mysqli_fetch_array($query_task);
+                $check_task = mysqli_num_rows($query_task);
+                if($check_task > 0){
+          ?>
+                <input type="hidden" name="task_id" value="<?php echo $row_task['task_id']; ?>">
+                <input type="hidden" name="rate" value="<?php echo $row_task['rate']; ?>">
+                <div class="card-header" style="text-align: center;">
+                  <h3><?php echo $row_task['task_name']; ?></h3>
+                  Rewards: <?php echo number_format($row_task['rate'], 2); ?> PHXCOIN
+                </div>
+                <div class="card-body">
+                <!-- style="pointer-events: none;" -->
+                  <video height="400px" width="100%" controls  id="myVideo">
+                    <source src="../storage/video/<?php echo $row_task['url']; ?>" type="video/mp4"></source>
+                  </video>
+                </div>
+              
+                <div class="card-footer">
+                  <a class="btn btn-primary" onclick="myFunction()">Finish</a>
+                  <button class="btn btn-success" type="submit" name="claim" id="claim" style="display: none;">Claim your rewards</button>
+                </div>
+            
+          <?php } else { ?>
+            <div class="card-body">
+                <div style="text-align: center;">
+                  <h1>No Task Available..</h1>
+                </div>
+             </div>
+            <?php } } ?>
+          
+          </form>
+            </div>
+          </div>
+        </div>
         <!-- Small boxes (Stat box) -->
         <div class="row">
           <div class="col-lg-3 col-6" >
@@ -216,84 +294,7 @@
           
           
         </div>
-        <div class="row">
-          <div class="col-md-12">
-              <div class="card">
-                <form method="POST">
-          <?php 
-            $id = $_SESSION['id'];
-            $query = mysqli_query($connection, "SELECT * FROM member_task1 WHERE member_id = $id ORDER BY id DESC LIMIT 1");
-            $check = mysqli_num_rows($query);
-            if($check > 0)
-            {
-                $row = mysqli_fetch_array($query);
-                $task_id = $row['task_id'] + 1;
-
-                $query_task = mysqli_query($connection, "SELECT * FROM task1 WHERE task_id = $task_id");
-                $check_task = mysqli_num_rows($query_task);
-                if($check_task > 0){
-                    $row_task = mysqli_fetch_array($query_task); ?>
-
-                    <input type="hidden" name="task_id" value="<?php echo $row_task['task_id']; ?>">
-                    <input type="hidden" name="rate" value="<?php echo $row_task['rate']; ?>">
-                    <div class="card-header" style="text-align: center;">
-                      <h3><?php echo $row_task['task_name']; ?></h3><br>
-                      Rewards: <?php echo number_format($row_task['rate'], 2); ?> PHXCOIN
-                    </div>
-                    <div class="card-body">
-                      <video height="400px" width="100%" controls id="myVideo">
-                        <source src="../storage/video/<?php echo $row_task['url']; ?>" type="video/mp4"></source>
-                      </video>
-                    </div>
-
-                    <div class="card-footer">
-                      <a class="btn btn-primary" onclick="myFunction()">Finish</a>
-                      <button class="btn btn-success" type="submit" name="claim" id="claim" style="display: none;">Claim your rewards</button>
-                    </div>
-
-           <?php } else {  ?>
-             <div class="card-body">
-                <div style="text-align: center;">
-                  <h1>No Task Available..</h1>
-                </div>
-             </div>
-          <?php } } 
-           else {
-            $query_task = mysqli_query($connection, "SELECT * FROM task1 LIMIT 1");
-                $row_task = mysqli_fetch_array($query_task);
-                $check_task = mysqli_num_rows($query_task);
-                if($check_task > 0){
-          ?>
-                <input type="hidden" name="task_id" value="<?php echo $row_task['task_id']; ?>">
-                <input type="hidden" name="rate" value="<?php echo $row_task['rate']; ?>">
-                <div class="card-header" style="text-align: center;">
-                  <h3><?php echo $row_task['task_name']; ?></h3>
-                  Rewards: <?php echo number_format($row_task['rate'], 2); ?> PHXCOIN
-                </div>
-                <div class="card-body">
-                <!-- style="pointer-events: none;" -->
-                  <video height="400px" width="100%" controls  id="myVideo">
-                    <source src="../storage/video/<?php echo $row_task['url']; ?>" type="video/mp4"></source>
-                  </video>
-                </div>
-              
-                <div class="card-footer">
-                  <a class="btn btn-primary" onclick="myFunction()">Finish</a>
-                  <button class="btn btn-success" type="submit" name="claim" id="claim" style="display: none;">Claim your rewards</button>
-                </div>
-            
-          <?php } else { ?>
-            <div class="card-body">
-                <div style="text-align: center;">
-                  <h1>No Task Available..</h1>
-                </div>
-             </div>
-            <?php } } ?>
-          
-          </form>
-            </div>
-          </div>
-        </div>
+       
       </div><!-- /.container-fluid -->
     </section>
     

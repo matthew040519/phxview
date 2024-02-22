@@ -122,7 +122,7 @@
                         <div class="card-body" style="background-color: #E5E4E2;">
                             <h5 style="font-weight: bold;">Platinum Package</h5>
                             <!-- <label for="">Price:  &#8369; 900.00</label> -->
-                            <p>5 clicks / 16 videos <br> Airdrop: 800<br> Phx rewards: 6000 Phx for 120 days <br>Free Promo Coupon: 12 <br>Free Raffle Ticket: 8</p>
+                            <p>5 clicks / 40 videos <br> Airdrop: 800<br> Phx rewards: 6000 Phx for 120 days <br>Free Promo Coupon: 12 <br>Free Raffle Ticket: 8</p>
                         </div>
                         <div class="card-footer">
                             <button class="btn btn-primary btn-block">Select</button>
